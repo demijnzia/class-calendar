@@ -193,6 +193,8 @@ select,input[type=text],input[type=date],input[type=time]{border:1px solid var(-
   .btn,.day,.tab{transition:background-color .12s,border-color .12s}
 }
 html{color-scheme:light}body{margin:0}
+[hidden]{display:none!important}
+img{max-width:100%}
 </style>
 
 </head>
@@ -209,8 +211,17 @@ var CLUB='社團活動';
 var DEF_CLASSES=['行銷管理A','管理會計與決策A','產業分析','營運與供應鏈管理','海外管理實務研習'];
 var DEF_CATS=['上課天','個人報告','分組報告','期末報告','考試',CLUB,'聚餐'];
 var ADDED_CATS=['聚餐'];
-var WD=['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
-var MON=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+var DICT={en:{"semester": "Semester", "weeks": "{n} weeks", "switchSem": "Switch semester", "edit": "Edit", "new": "New", "tags": "Tags", "export": "Export to Google Calendar", "language": "Language", "prev": "Previous", "next": "Next", "today": "Today", "view": "View", "v_month": "Month", "v_week": "Week", "v_list": "List", "weekOf": "Week {n} of {tot}", "addEvent": "+ Add event", "addPlain": "Add event", "empty": "No events in {sem} yet. Add one, or load sample events dated around today to see how the due-date colors look.", "loadSample": "Load sample events", "signOut": "Sign out", "signIn": "Sign in to sync", "rmSample": "Remove sample events", "lg7": "0–7 days to go", "lg14": "8–14 days to go", "lgPast": "Past events fade", "more": "+{n} more", "addDay": "+ Add on this day", "noDay": "No events on this day.", "addOn": "Add event on {d}", "noEv": "No events", "allClasses": "All classes", "filterClass": "Filter by class", "upOnly": "Upcoming only", "noMatch": "Nothing matches these filters.", "nEv1": "{n} event", "nEvN": "{n} events", "today_": "Today", "tomorrow": "Tomorrow", "yesterday": "Yesterday", "inDays": "in {n} days", "daysAgo": "{n} days ago", "editEvent": "Edit event", "category": "Category", "className": "Class name", "phClass": "e.g. 行銷管理A", "titleOpt": "Title (optional)", "phTitle": "e.g. Midterm, chapters 1–5", "date": "Date", "timeOpt": "Time (optional)", "repeat": "Repeat weekly until the semester ends", "delete": "Delete", "gcal": "Add to Google Calendar", "cancel": "Cancel", "save": "Save", "activity": "Activity name", "savedTag": "Saved tag: ", "newTag": "New tag. A random color is assigned when you save and stays the same afterward.", "tapDel": "Tap again to delete", "eDate": "Pick a date.", "eDateIn": "Pick a date inside {name} ({a} to {b}).", "eAct": "Enter an activity name.", "eCls": "Enter a class name.", "editSem": "Edit semester", "newSem": "New semester", "semName": "Semester name", "phSem": "e.g. 115-2", "startDate": "Start date", "endDate": "End date", "outRange": "Events dated outside the range stay in the List view.", "delSem": "Delete semester", "tapDelSem": "Tap again: deletes {n} events too", "eSemName": "Enter a semester name.", "eSemDates": "Pick a start and end date.", "eSemOrder": "The end date must be on or after the start date.", "dueColors": "Due-date colors", "tagsHint": "A tag gets a random color the first time it is created and keeps it. The color code is the record of that initial color.", "tagsPlain": " Names under {plain} are plain text and are not saved here.", "categories": "Categories", "newCat": "New category", "add": "Add", "classNames": "Class names", "noneYet": "None yet. A class name is saved the first time you use it on an event.", "done": "Done", "eCatName": "Enter a category name.", "eCatDup": "That category already exists.", "xTitle": "Export to Google Calendar", "xScope": "Events to export from {sem}", "xAll": "All events", "xUp": "Upcoming only (from today)", "xHint": "Google Calendar imports a file, so this saves a CSV and you upload it there:", "xs1": "Click Download CSV below.", "xs2": "In Google Calendar on a computer, open Settings, then Import &amp; export.", "xs3": "Choose the CSV file and a calendar, then Import. A new calendar named {sem} makes it easy to remove later.", "xNoSave": "Saving a file is not available here.", "xCopy": "Copy this text into a file named {file}", "close": "Close", "xDl": "Download CSV", "xCount": "{c} will be exported.", "xNone": "Nothing to export yet. Add an event first.", "csvDesc": "Semester {sem}", "sLecture": "Lecture", "sCase": "Case write-up", "sMid": "Midterm", "sGroup": "Group presentation", "sFinal": "Final report", "sClub": "吉他社 迎新", "keepQ": "Which calendar do you want to keep?", "keepBody": "This browser has {a}. Your account has {b}. The one you do not pick is overwritten.", "useCloud": "Use my account's calendar", "useLocal": "Use this browser's calendar", "siTitle": "Sign in to sync", "siHint": "Enter your email. We send a sign-in link, no password needed. Use the same email on every device.", "email": "Email", "eMail": "Enter a valid email address.", "sendLink": "Send link", "siSent": "Check {mail} for the sign-in link, then open it in this browser.", "syncOk": "Synced to your account.", "syncErr": "Could not sync. Saved in this browser only, will retry on your next change.", "syncCloud": "Saved in this browser only. Sign in to use it on other devices.", "syncLocal": "Saved in this browser only."},zh:{"semester": "學期", "weeks": "共 {n} 週", "switchSem": "切換學期", "edit": "編輯", "new": "新增", "tags": "標籤", "export": "匯出到 Google 日曆", "language": "語言", "prev": "上一頁", "next": "下一頁", "today": "今天", "view": "檢視", "v_month": "月", "v_week": "週", "v_list": "清單", "weekOf": "第 {n} 週，共 {tot} 週", "addEvent": "+ 新增活動", "addPlain": "新增活動", "empty": "{sem} 目前沒有活動。你可以新增活動，或載入以今天為基準的範例活動，看看到期日顏色的效果。", "loadSample": "載入範例活動", "signOut": "登出", "signIn": "登入以同步", "rmSample": "移除範例活動", "lg7": "剩 0–7 天", "lg14": "剩 8–14 天", "lgPast": "已過去的活動會變淡", "more": "還有 {n} 項", "addDay": "+ 在這天新增", "noDay": "這天沒有活動。", "addOn": "在 {d} 新增活動", "noEv": "沒有活動", "allClasses": "所有課程", "filterClass": "依課程篩選", "upOnly": "只看未來的活動", "noMatch": "沒有符合條件的活動。", "nEv1": "{n} 個活動", "nEvN": "{n} 個活動", "today_": "今天", "tomorrow": "明天", "yesterday": "昨天", "inDays": "{n} 天後", "daysAgo": "{n} 天前", "editEvent": "編輯活動", "category": "類別", "className": "課程名稱", "phClass": "例如：行銷管理A", "titleOpt": "標題（選填）", "phTitle": "例如：期中考，第 1–5 章", "date": "日期", "timeOpt": "時間（選填）", "repeat": "每週重複，直到學期結束", "delete": "刪除", "gcal": "加到 Google 日曆", "cancel": "取消", "save": "儲存", "activity": "活動名稱", "savedTag": "已儲存的標籤：", "newTag": "新標籤。儲存時會隨機配色，之後顏色不變。", "tapDel": "再按一次即刪除", "eDate": "請選擇日期。", "eDateIn": "請選擇 {name} 期間內的日期（{a} 至 {b}）。", "eAct": "請輸入活動名稱。", "eCls": "請輸入課程名稱。", "editSem": "編輯學期", "newSem": "新增學期", "semName": "學期名稱", "phSem": "例如：115-2", "startDate": "開始日期", "endDate": "結束日期", "outRange": "日期在範圍外的活動仍會顯示在清單檢視。", "delSem": "刪除學期", "tapDelSem": "再按一次：連同 {n} 個活動一併刪除", "eSemName": "請輸入學期名稱。", "eSemDates": "請選擇開始與結束日期。", "eSemOrder": "結束日期不可早於開始日期。", "dueColors": "到期日顏色", "tagsHint": "標籤第一次建立時會隨機配色，之後顏色不變。色碼即為最初設定顏色的紀錄。", "tagsPlain": "「{plain}」的名稱視為一般文字，不會另外儲存。", "categories": "類別", "newCat": "新類別", "add": "新增", "classNames": "課程名稱", "noneYet": "尚無課程。課程名稱會在你第一次用於活動時儲存。", "done": "完成", "eCatName": "請輸入類別名稱。", "eCatDup": "此類別已存在。", "xTitle": "匯出到 Google 日曆", "xScope": "從 {sem} 匯出的活動", "xAll": "全部活動", "xUp": "只匯出未來的活動（從今天起）", "xHint": "Google 日曆以檔案匯入，所以這裡會儲存 CSV 檔，再由你上傳：", "xs1": "點下方的「下載 CSV」。", "xs2": "在電腦版 Google 日曆開啟「設定」，再選「匯入和匯出」。", "xs3": "選擇 CSV 檔案和要匯入的日曆，然後按「匯入」。建議新建一個名為 {sem} 的日曆，之後要移除會比較方便。", "xNoSave": "此處無法儲存檔案。", "xCopy": "請將以下文字複製到名為 {file} 的檔案", "close": "關閉", "xDl": "下載 CSV", "xCount": "將匯出 {c}。", "xNone": "還沒有可匯出的活動，請先新增活動。", "csvDesc": "學期 {sem}", "sLecture": "上課", "sCase": "個案寫作", "sMid": "期中考", "sGroup": "小組報告", "sFinal": "期末報告", "sClub": "吉他社 迎新", "keepQ": "要保留哪一份行事曆？", "keepBody": "此瀏覽器有 {a}，你的帳號有 {b}。未選擇的那一份會被覆蓋。", "useCloud": "使用帳號中的行事曆", "useLocal": "使用此瀏覽器的行事曆", "siTitle": "登入以同步", "siHint": "請輸入電子郵件，我們會寄一個登入連結給你，不需要密碼。每台裝置請使用同一個信箱。", "email": "電子郵件", "eMail": "請輸入有效的電子郵件。", "sendLink": "寄送連結", "siSent": "請到 {mail} 收取登入連結，並在此瀏覽器中開啟。", "syncOk": "已同步到你的帳號。", "syncErr": "同步失敗。目前只儲存在此瀏覽器，下次變更時會再試一次。", "syncCloud": "目前只儲存在此瀏覽器。登入後可在其他裝置使用。", "syncLocal": "目前只儲存在此瀏覽器。"}};
+var LANG='en';
+try{var _l=localStorage.getItem('semester-calendar-lang');LANG=_l==='zh'||_l==='en'?_l:((navigator.language||'').toLowerCase().indexOf('zh')===0?'zh':'en')}catch(e){}
+function tx(k,v){var s=DICT[LANG][k];if(s===undefined)s=DICT.en[k];if(s===undefined)s=k;return s.replace(/\{(\w+)\}/g,function(m,x){return v&&v[x]!==undefined?v[x]:m})}
+function nev(n){return tx(n===1?'nEv1':'nEvN',{n:n})}
+var WDS={en:['Mon','Tue','Wed','Thu','Fri','Sat','Sun'],zh:['週一','週二','週三','週四','週五','週六','週日']};
+var MONS=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+function wd(){return WDS[LANG]}
+function loc(){return LANG==='zh'?'zh-TW':'en-US'}
+function setLang(l){LANG=l;try{localStorage.setItem('semester-calendar-lang',l)}catch(e){}document.documentElement.lang=l==='zh'?'zh-Hant':'en'}
+document.documentElement.lang=LANG==='zh'?'zh-Hant':'en';
 var $=function(s){return document.querySelector(s)};
 var esc=function(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})};
 var uid=function(){return (window.crypto&&crypto.randomUUID)?crypto.randomUUID():'i'+Math.random().toString(36).slice(2)+Date.now().toString(36)};
@@ -224,9 +235,9 @@ var diff=function(a,b){return Math.round((parse(b)-parse(a))/864e5)};
 var today=function(){return fmt(new Date())};
 var ws=function(s){return addDays(s,-((parse(s).getDay()+6)%7))};
 var clamp=function(d,a,b){return d<a?a:d>b?b:d};
-var monthLabel=function(s){return parse(s).toLocaleDateString('en-US',{month:'long',year:'numeric'})};
-var rangeLabel=function(a,b){var x=parse(a),y=parse(b);return MON[x.getMonth()]+' '+x.getDate()+' – '+MON[y.getMonth()]+' '+y.getDate()+', '+y.getFullYear()};
-var rel=function(ds){var d=diff(today(),ds);return d===0?'Today':d===1?'Tomorrow':d>0?'in '+d+' days':d===-1?'Yesterday':(-d)+' days ago'};
+var monthLabel=function(s){return parse(s).toLocaleDateString(loc(),{month:'long',year:'numeric'})};
+var rangeLabel=function(a,b){var x=parse(a),y=parse(b);if(LANG==='zh')return x.getFullYear()+'年'+(x.getMonth()+1)+'月'+x.getDate()+'日 – '+(y.getFullYear()!==x.getFullYear()?y.getFullYear()+'年':'')+(y.getMonth()+1)+'月'+y.getDate()+'日';return MONS[x.getMonth()]+' '+x.getDate()+' – '+MONS[y.getMonth()]+' '+y.getDate()+', '+y.getFullYear()};
+var rel=function(ds){var d=diff(today(),ds);return d===0?tx('today_'):d===1?tx('tomorrow'):d>0?tx('inDays',{n:d}):d===-1?tx('yesterday'):tx('daysAgo',{n:-d})};
 
 /* ---------- colors ---------- */
 function hslToHex(h,s,l){s/=100;l/=100;var k=function(n){return (n+h/30)%12},a=s*Math.min(l,1-l);
@@ -271,7 +282,7 @@ var SUPABASE_ANON_KEY='sb_publishable_J9loYgIHjNZ3QYkAGyQzQQ_dIeqvLm8';
 var cloud={sb:null,enabled:false,uid:'',email:'',lastAt:0,dirty:false};
 var dbDoc=null,sync='local',writing=Promise.resolve(),timer=null;
 function persistLocal(){try{localStorage.setItem(KEY,JSON.stringify(state))}catch(e){}}
-function syncText(){return sync==='synced'?'Synced to your account.':sync==='error'?'Could not sync. Saved in this browser only, will retry on your next change.':cloud.enabled?'Saved in this browser only. Sign in to use it on other devices.':'Saved in this browser only.'}
+function syncText(){return sync==='synced'?tx('syncOk'):sync==='error'?tx('syncErr'):cloud.enabled?tx('syncCloud'):tx('syncLocal')}
 function paintSync(){var el=$('#sync');if(el)el.textContent=syncText()}
 function writeDb(){
   if(!dbDoc)return;var json=JSON.stringify(state);
@@ -317,32 +328,33 @@ function render(){
 function header(s){
   var weeks=Math.floor(diff(ws(s.start),ws(s.end))/7)+1;
   var opts=state.semesters.slice().sort(function(a,b){return a.start<b.start?-1:1}).map(function(x){return '<option value="'+x.id+'"'+(x.id===s.id?' selected':'')+'>'+esc(x.name)+'</option>'}).join('');
-  return '<header class="top"><div class="ident"><div class="eyebrow">Semester</div><h1>'+esc(s.name)+'</h1><div class="meta">'+s.start+' → '+s.end+' · '+weeks+' weeks</div></div>'
-    +'<div class="ctl"><label class="sr" for="semSel">Switch semester</label><select id="semSel">'+opts+'</select>'
-    +'<button class="btn" data-act="sem-edit">Edit</button><button class="btn" data-act="sem-new">New</button><button class="btn" data-act="tags">Tags</button><button class="btn" data-act="export">Export</button></div></header>';
+  return '<header class="top"><div class="ident"><div class="eyebrow">'+tx('semester')+'</div><h1>'+esc(s.name)+'</h1><div class="meta">'+s.start+' → '+s.end+' · '+tx('weeks',{n:weeks})+'</div></div>'
+    +'<div class="ctl"><label class="sr" for="semSel">'+tx('switchSem')+'</label><select id="semSel">'+opts+'</select>'
+    +'<button class="btn" data-act="sem-edit">'+tx('edit')+'</button><button class="btn" data-act="sem-new">'+tx('new')+'</button><button class="btn" data-act="tags">'+tx('tags')+'</button><button class="btn" data-act="export" title="'+tx('xHint')+'">'+tx('export')+'</button>'
+    +'<div class="seg" role="group" aria-label="'+tx('language')+'"><button class="tab" data-act="lang" data-l="en" aria-pressed="'+(LANG==='en')+'">EN</button><button class="tab" data-act="lang" data-l="zh" aria-pressed="'+(LANG==='zh')+'">中文</button></div></div></header>';
 }
 function navHtml(label,sub,pd,nd){
-  return '<div class="nav"><button class="btn sq" data-act="prev" aria-label="Previous"'+(pd?' disabled':'')+'>‹</button>'
+  return '<div class="nav"><button class="btn sq" data-act="prev" aria-label="'+tx('prev')+'"'+(pd?' disabled':'')+'>‹</button>'
     +'<div class="navl"><strong>'+label+'</strong>'+(sub?'<span class="mono">'+sub+'</span>':'')+'</div>'
-    +'<button class="btn sq" data-act="next" aria-label="Next"'+(nd?' disabled':'')+'>›</button><button class="btn" data-act="today">Today</button></div>';
+    +'<button class="btn sq" data-act="next" aria-label="'+tx('next')+'"'+(nd?' disabled':'')+'>›</button><button class="btn" data-act="today">'+tx('today')+'</button></div>';
 }
 function bar(s){
-  var tabs=['month','week','list'].map(function(v){return '<button class="tab" data-act="view" data-v="'+v+'" aria-pressed="'+(ui.view===v)+'">'+v[0].toUpperCase()+v.slice(1)+'</button>'}).join('');
+  var tabs=['month','week','list'].map(function(v){return '<button class="tab" data-act="view" data-v="'+v+'" aria-pressed="'+(ui.view===v)+'">'+tx('v_'+v)+'</button>'}).join('');
   var nav='';
   if(ui.view==='month'){var k=ui.cursor.slice(0,7);nav=navHtml(monthLabel(ui.cursor),'',k<=s.start.slice(0,7),k>=s.end.slice(0,7))}
   else if(ui.view==='week'){
     var st=ws(ui.cursor),en=addDays(st,6),n=Math.floor(diff(ws(s.start),st)/7)+1,tot=Math.floor(diff(ws(s.start),ws(s.end))/7)+1;
-    nav=navHtml(rangeLabel(st,en),'Week '+n+' of '+tot,st<=ws(s.start),st>=ws(s.end));
+    nav=navHtml(rangeLabel(st,en),tx('weekOf',{n:n,tot:tot}),st<=ws(s.start),st>=ws(s.end));
   }
-  return '<div class="bar"><div class="seg" role="group" aria-label="View">'+tabs+'</div>'+nav+'<button class="btn primary add" data-act="add">+ Add event</button></div>';
+  return '<div class="bar"><div class="seg" role="group" aria-label="'+tx('view')+'">'+tabs+'</div>'+nav+'<button class="btn primary add" data-act="add">'+tx('addEvent')+'</button></div>';
 }
 function emptyNote(s){
-  return '<div class="note"><p>No events in '+esc(s.name)+' yet. Add one, or load sample events dated around today to see how the due-date colors look.</p><div class="ctl"><button class="btn primary" data-act="add">Add event</button><button class="btn" data-act="sample">Load sample events</button></div></div>';
+  return '<div class="note"><p>'+tx('empty',{sem:esc(s.name)})+'</p><div class="ctl"><button class="btn primary" data-act="add">'+tx('addPlain')+'</button><button class="btn" data-act="sample">'+tx('loadSample')+'</button></div></div>';
 }
 function footer(){
   var hasSample=state.events.some(function(e){return e.sample});
-  var acct=!cloud.enabled?'':cloud.uid?'<span>'+esc(cloud.email)+'</span><button class="link" data-act="signout">Sign out</button>':'<button class="btn" data-act="signin">Sign in to sync</button>';
-  return '<footer class="foot"><span id="sync">'+syncText()+'</span>'+acct+(hasSample?'<button class="link" data-act="unsample">Remove sample events</button>':'')+'</footer>';
+  var acct=!cloud.enabled?'':cloud.uid?'<span>'+esc(cloud.email)+'</span><button class="link" data-act="signout">'+tx('signOut')+'</button>':'<button class="btn" data-act="signin">'+tx('signIn')+'</button>';
+  return '<footer class="foot"><span id="sync">'+syncText()+'</span>'+acct+(hasSample?'<button class="link" data-act="unsample">'+tx('rmSample')+'</button>':'')+'</footer>';
 }
 function monthEv(e){
   var u=urgency(e);
@@ -351,33 +363,33 @@ function monthEv(e){
 function monthView(s,map){
   var first=ui.cursor.slice(0,7)+'-01',fd=parse(first),gs=ws(first);
   var dim=new Date(fd.getFullYear(),fd.getMonth()+1,0).getDate(),off=(fd.getDay()+6)%7,rows=Math.ceil((off+dim)/7),t=today();
-  var cells=WD.map(function(w){return '<div class="mh">'+w+'</div>'}).join('');
+  var cells=wd().map(function(w){return '<div class="mh">'+w+'</div>'}).join('');
   for(var i=0;i<rows*7;i++){
     var ds=addDays(gs,i),d=parse(ds),list=map[ds]||[];
     var out=ds.slice(0,7)!==ui.cursor.slice(0,7)||ds<s.start||ds>s.end;
-    cells+='<div class="day'+(out?' out':'')+(ds===t?' today':'')+(ds===ui.sel?' sel':'')+'" role="button" tabindex="0" data-act="day" data-d="'+ds+'" aria-label="'+ds+', '+list.length+' events">'
-      +'<div class="n">'+(d.getDate()===1?MON[d.getMonth()]+' 1':d.getDate())+'</div>'
-      +list.slice(0,3).map(monthEv).join('')+(list.length>3?'<div class="more">+'+(list.length-3)+' more</div>':'')+'</div>';
+    cells+='<div class="day'+(out?' out':'')+(ds===t?' today':'')+(ds===ui.sel?' sel':'')+'" role="button" tabindex="0" data-act="day" data-d="'+ds+'" aria-label="'+ds+', '+nev(list.length)+'">'
+      +'<div class="n">'+(d.getDate()===1?(LANG==='zh'?(d.getMonth()+1)+'月1日':MONS[d.getMonth()]+' 1'):d.getDate())+'</div>'
+      +list.slice(0,3).map(monthEv).join('')+(list.length>3?'<div class="more">'+tx('more',{n:list.length-3})+'</div>':'')+'</div>';
   }
-  var legend='<div class="legend"><span><i class="sw danger"></i>0–7 days to go</span><span><i class="sw warn"></i>8–14 days to go</span><span>Past events fade</span></div>';
+  var legend='<div class="legend"><span><i class="sw danger"></i>'+tx('lg7')+'</span><span><i class="sw warn"></i>'+tx('lg14')+'</span><span>'+tx('lgPast')+'</span></div>';
   return legend+'<div class="mgrid">'+cells+'</div>'+dayPanel(map);
 }
 function dayPanel(map){
   var ds=ui.sel,list=map[ds]||[];
-  var title=parse(ds).toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric'});
+  var title=parse(ds).toLocaleDateString(loc(),{weekday:'long',month:'long',day:'numeric'});
   var rows=list.map(function(e){
     return '<button class="drow" data-act="edit" data-id="'+e.id+'">'+(e.time?'<span class="time">'+esc(e.time)+'</span>':'')+'<span class="chips">'+catChip(e)+clsChip(e)+'</span>'+(e.title?'<span>'+esc(e.title)+'</span>':'')+'</button>';
   }).join('');
-  return '<section class="panel" id="dayPanel"><div class="panel-h"><div><h2>'+title+'</h2><span class="rel">'+rel(ds)+'</span></div><button class="btn" data-act="add" data-d="'+ds+'">+ Add on this day</button></div>'+(rows||'<div class="none">No events on this day.</div>')+'</section>';
+  return '<section class="panel" id="dayPanel"><div class="panel-h"><div><h2>'+title+'</h2><span class="rel">'+rel(ds)+'</span></div><button class="btn" data-act="add" data-d="'+ds+'">'+tx('addDay')+'</button></div>'+(rows||'<div class="none">'+tx('noDay')+'</div>')+'</section>';
 }
 function weekView(s,map){
   var st=ws(ui.cursor),t=today(),out='';
   for(var i=0;i<7;i++){
     var ds=addDays(st,i),d=parse(ds),list=map[ds]||[],o=ds<s.start||ds>s.end;
-    out+='<section class="wday'+(ds===t?' today':'')+(o?' out':'')+'"><header><span class="wd">'+WD[i]+'</span><span class="wn">'+d.getDate()+'</span><button class="mini" data-act="add" data-d="'+ds+'" aria-label="Add event on '+ds+'">+</button></header><div class="wevs">'
+    out+='<section class="wday'+(ds===t?' today':'')+(o?' out':'')+'"><header><span class="wd">'+wd()[i]+'</span><span class="wn">'+d.getDate()+'</span><button class="mini" data-act="add" data-d="'+ds+'" aria-label="'+tx('addOn',{d:ds})+'">+</button></header><div class="wevs">'
       +(list.map(function(e){
         return '<button class="wev" data-act="edit" data-id="'+e.id+'">'+(e.time?'<span class="time">'+esc(e.time)+'</span>':'')+'<span class="chips">'+catChip(e)+clsChip(e)+'</span>'+(e.title?'<span class="wt">'+esc(e.title)+'</span>':'')+'</button>';
-      }).join('')||'<div class="none">No events</div>')+'</div></section>';
+      }).join('')||'<div class="none">'+tx('noEv')+'</div>')+'</div></section>';
   }
   return '<div class="wgrid">'+out+'</div>';
 }
@@ -385,18 +397,18 @@ function listView(s,evs){
   var t=today();
   var used={};evs.forEach(function(e){if(e.cls)used[e.cls]=1});
   var catBtns=state.categories.map(function(c){return '<button class="chipbtn" data-act="fcat" data-n="'+esc(c.name)+'" aria-pressed="'+(!ui.hideCats.has(c.name))+'">'+chip(c.name,c.color)+'</button>'}).join('');
-  var clsOpts='<option value="">All classes</option>'+Object.keys(used).sort().map(function(n){return '<option value="'+esc(n)+'"'+(ui.fcls===n?' selected':'')+'>'+esc(n)+'</option>'}).join('');
+  var clsOpts='<option value="">'+tx('allClasses')+'</option>'+Object.keys(used).sort().map(function(n){return '<option value="'+esc(n)+'"'+(ui.fcls===n?' selected':'')+'>'+esc(n)+'</option>'}).join('');
   var rows=evs.filter(function(e){return !ui.hideCats.has(e.cat)&&(!ui.fcls||e.cls===ui.fcls)&&(!ui.upOnly||e.date>=t)});
   var groups='',cur='';
   rows.forEach(function(e){
     var k=e.date.slice(0,7);
     if(k!==cur){if(cur)groups+='</div>';groups+='<div class="lgrp"><h3>'+monthLabel(e.date)+'</h3>';cur=k}
     var d=parse(e.date);
-    groups+='<button class="lrow'+(e.date<t?' past':'')+'" data-act="edit" data-id="'+e.id+'"><span class="ld"><b>'+pad(d.getMonth()+1)+'-'+pad(d.getDate())+'</b> '+WD[(d.getDay()+6)%7]+(e.time?'<br>'+esc(e.time):'')+'</span><span class="lm"><span class="chips">'+catChip(e)+clsChip(e)+'</span>'+(e.title?'<span class="lt">'+esc(e.title)+'</span>':'')+'</span><span class="lr">'+rel(e.date)+'</span></button>';
+    groups+='<button class="lrow'+(e.date<t?' past':'')+'" data-act="edit" data-id="'+e.id+'"><span class="ld"><b>'+pad(d.getMonth()+1)+'-'+pad(d.getDate())+'</b> '+wd()[(d.getDay()+6)%7]+(e.time?'<br>'+esc(e.time):'')+'</span><span class="lm"><span class="chips">'+catChip(e)+clsChip(e)+'</span>'+(e.title?'<span class="lt">'+esc(e.title)+'</span>':'')+'</span><span class="lr">'+rel(e.date)+'</span></button>';
   });
   if(cur)groups+='</div>';
-  return '<section class="panel"><div class="filters">'+catBtns+'<label class="sr" for="fcls">Filter by class</label><select id="fcls">'+clsOpts+'</select><label class="check"><input type="checkbox" id="upOnly"'+(ui.upOnly?' checked':'')+'> Upcoming only</label></div>'
-    +'<div>'+(groups||'<div class="none">Nothing matches these filters.</div>')+'</div></section>';
+  return '<section class="panel"><div class="filters">'+catBtns+'<label class="sr" for="fcls">'+tx('filterClass')+'</label><select id="fcls">'+clsOpts+'</select><label class="check"><input type="checkbox" id="upOnly"'+(ui.upOnly?' checked':'')+'> '+tx('upOnly')+'</label></div>'
+    +'<div>'+(groups||'<div class="none">'+tx('noMatch')+'</div>')+'</div></section>';
 }
 
 /* ---------- sheets ---------- */
@@ -415,42 +427,42 @@ function openEvent(id,date){
           :{cat:state.categories[0]?state.categories[0].name:'',cls:'',title:'',date:clamp(date||ui.sel||today(),s.start,s.end),time:''};
   var catBtns=state.categories.map(function(c){return '<button type="button" class="chipbtn pick" data-s="cat" data-cat="'+esc(c.name)+'" aria-pressed="'+(c.name===f.cat)+'">'+chip(c.name,c.color)+'</button>'}).join('');
   var recent=state.classes.map(function(c){return '<button type="button" class="chipbtn" data-s="pick" data-n="'+esc(c.name)+'">'+chip(c.name,c.color)+'</button>'}).join('');
-  var html='<h2>'+(ex?'Edit event':'Add event')+'</h2>'
-    +'<div class="field"><span class="lab">Category</span><div class="chips" id="fCats">'+catBtns+'</div></div>'
-    +'<div class="field" id="fClsWrap"><label for="fCls">Class name</label><input type="text" id="fCls" autocomplete="off" placeholder="e.g. 行銷管理A" value="'+esc(f.cls)+'"><div class="chips">'+recent+'</div><div class="hint" id="fClsHint"></div></div>'
-    +'<div class="field"><label for="fTitle" id="fTitleLab">Title (optional)</label><input type="text" id="fTitle" autocomplete="off" placeholder="e.g. Midterm, chapters 1–5" value="'+esc(f.title)+'"></div>'
-    +'<div class="row2"><div class="field"><label for="fDate">Date</label><input type="date" id="fDate" min="'+s.start+'" max="'+s.end+'" value="'+f.date+'"></div>'
-    +'<div class="field"><label for="fTime">Time (optional)</label><input type="time" id="fTime" value="'+esc(f.time)+'"></div></div>'
-    +(ex?'':'<label class="check" style="margin-bottom:10px"><input type="checkbox" id="fRep"> Repeat weekly until the semester ends</label>')
+  var html='<h2>'+(ex?tx('editEvent'):tx('addPlain'))+'</h2>'
+    +'<div class="field"><span class="lab">'+tx('category')+'</span><div class="chips" id="fCats">'+catBtns+'</div></div>'
+    +'<div class="field" id="fClsWrap"><label for="fCls">'+tx('className')+'</label><input type="text" id="fCls" autocomplete="off" placeholder="'+tx('phClass')+'" value="'+esc(f.cls)+'"><div class="chips">'+recent+'</div><div class="hint" id="fClsHint"></div></div>'
+    +'<div class="field"><label for="fTitle" id="fTitleLab">'+tx('titleOpt')+'</label><input type="text" id="fTitle" autocomplete="off" placeholder="'+tx('phTitle')+'" value="'+esc(f.title)+'"></div>'
+    +'<div class="row2"><div class="field"><label for="fDate">'+tx('date')+'</label><input type="date" id="fDate" min="'+s.start+'" max="'+s.end+'" value="'+f.date+'"></div>'
+    +'<div class="field"><label for="fTime">'+tx('timeOpt')+'</label><input type="time" id="fTime" value="'+esc(f.time)+'"></div></div>'
+    +(ex?'':'<label class="check" style="margin-bottom:10px"><input type="checkbox" id="fRep"> '+tx('repeat')+'</label>')
     +'<div class="err" id="fErr" role="alert"></div>'
-    +'<div class="actions">'+(ex?'<button class="btn warnbtn" data-s="del">Delete</button><a class="btn" href="'+esc(gcalUrl(ex))+'" target="_blank" rel="noopener">Add to Google Calendar</a>':'')+'<span class="sp"></span><button class="btn" data-s="close">Cancel</button><button class="btn primary" data-s="save">Save</button></div>';
+    +'<div class="actions">'+(ex?'<button class="btn warnbtn" data-s="del">'+tx('delete')+'</button><a class="btn" href="'+esc(gcalUrl(ex))+'" target="_blank" rel="noopener">'+tx('gcal')+'</a>':'')+'<span class="sp"></span><button class="btn" data-s="close">'+tx('cancel')+'</button><button class="btn primary" data-s="save">'+tx('save')+'</button></div>';
   function syncCat(){
     document.querySelectorAll('#fCats [data-cat]').forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.cat===f.cat))});
     var plain=!!(catOf(f.cat)&&catOf(f.cat).plain);
     $('#fClsWrap').hidden=plain;
-    $('#fTitleLab').textContent=plain?'Activity name':'Title (optional)';
+    $('#fTitleLab').textContent=plain?tx('activity'):tx('titleOpt');
   }
   function hint(){
     var v=$('#fCls').value.trim(),el=$('#fClsHint');
     if(!v){el.textContent='';return}
     var c=clsOf(v);
-    el.innerHTML=c?'Saved tag: '+chip(v,c.color):'New tag. A random color is assigned when you save and stays the same afterward.';
+    el.innerHTML=c?tx('savedTag')+chip(v,c.color):tx('newTag');
   }
   openSheet(html,function(a,b){
     if(a==='close')closeSheet();
     else if(a==='cat'){f.cat=b.dataset.cat;syncCat()}
     else if(a==='pick'){$('#fCls').value=b.dataset.n;hint()}
     else if(a==='del'){
-      if(!armed){armed=true;b.textContent='Tap again to delete'}
+      if(!armed){armed=true;b.textContent=tx('tapDel')}
       else{state.events=state.events.filter(function(e){return e.id!==ex.id});save();closeSheet();render()}
     }
     else if(a==='save'){
       var date=$('#fDate').value,time=$('#fTime').value,title=$('#fTitle').value.trim(),cls=$('#fCls').value.trim();
       var plain=!!(catOf(f.cat)&&catOf(f.cat).plain),err='';
-      if(!date)err='Pick a date.';
-      else if((date<s.start||date>s.end)&&!(ex&&ex.date===date))err='Pick a date inside '+s.name+' ('+s.start+' to '+s.end+').';
-      else if(plain&&!title)err='Enter an activity name.';
-      else if(!plain&&!cls)err='Enter a class name.';
+      if(!date)err=tx('eDate');
+      else if((date<s.start||date>s.end)&&!(ex&&ex.date===date))err=tx('eDateIn',{name:s.name,a:s.start,b:s.end});
+      else if(plain&&!title)err=tx('eAct');
+      else if(!plain&&!cls)err=tx('eCls');
       if(err){$('#fErr').textContent=err;return}
       if(!plain)ensureClass(cls);
       if(ex){Object.assign(ex,{cat:f.cat,cls:plain?'':cls,title:title,date:date,time:time});delete ex.sample}
@@ -469,23 +481,23 @@ function openSem(id){
   var last=state.semesters.slice().sort(function(a,b){return a.end<b.end?-1:1}).pop();
   var init=ex||{name:'',start:addDays(last.end,1),end:addDays(last.end,112)};
   var nEv=ex?state.events.filter(function(e){return e.sem===ex.id}).length:0;
-  var html='<h2>'+(ex?'Edit semester':'New semester')+'</h2>'
-    +'<div class="field"><label for="sName">Semester name</label><input type="text" id="sName" autocomplete="off" placeholder="e.g. 115-2" value="'+esc(init.name)+'"></div>'
-    +'<div class="row2"><div class="field"><label for="sStart">Start date</label><input type="date" id="sStart" value="'+init.start+'"></div>'
-    +'<div class="field"><label for="sEnd">End date</label><input type="date" id="sEnd" value="'+init.end+'"></div></div>'
-    +'<p class="hint">Events dated outside the range stay in the List view.</p>'
+  var html='<h2>'+(ex?tx('editSem'):tx('newSem'))+'</h2>'
+    +'<div class="field"><label for="sName">'+tx('semName')+'</label><input type="text" id="sName" autocomplete="off" placeholder="'+tx('phSem')+'" value="'+esc(init.name)+'"></div>'
+    +'<div class="row2"><div class="field"><label for="sStart">'+tx('startDate')+'</label><input type="date" id="sStart" value="'+init.start+'"></div>'
+    +'<div class="field"><label for="sEnd">'+tx('endDate')+'</label><input type="date" id="sEnd" value="'+init.end+'"></div></div>'
+    +'<p class="hint">'+tx('outRange')+'</p>'
     +'<div class="err" id="sErr" role="alert"></div>'
-    +'<div class="actions">'+(ex&&state.semesters.length>1?'<button class="btn warnbtn" data-s="del">Delete semester</button>':'')+'<span class="sp"></span><button class="btn" data-s="close">Cancel</button><button class="btn primary" data-s="save">Save</button></div>';
+    +'<div class="actions">'+(ex&&state.semesters.length>1?'<button class="btn warnbtn" data-s="del">'+tx('delSem')+'</button>':'')+'<span class="sp"></span><button class="btn" data-s="close">'+tx('cancel')+'</button><button class="btn primary" data-s="save">'+tx('save')+'</button></div>';
   openSheet(html,function(a,b){
     if(a==='close')closeSheet();
     else if(a==='del'){
-      if(!armed){armed=true;b.textContent='Tap again: deletes '+nEv+' events too'}
+      if(!armed){armed=true;b.textContent=tx('tapDelSem',{n:nEv})}
       else{state.events=state.events.filter(function(e){return e.sem!==ex.id});state.semesters=state.semesters.filter(function(x){return x.id!==ex.id});
         save();ui.semId=defaultSem().id;resetNav();closeSheet();render()}
     }
     else if(a==='save'){
       var name=$('#sName').value.trim(),st=$('#sStart').value,en=$('#sEnd').value,err='';
-      if(!name)err='Enter a semester name.';else if(!st||!en)err='Pick a start and end date.';else if(en<st)err='The end date must be on or after the start date.';
+      if(!name)err=tx('eSemName');else if(!st||!en)err=tx('eSemDates');else if(en<st)err=tx('eSemOrder');
       if(err){$('#sErr').textContent=err;return}
       if(ex){Object.assign(ex,{name:name,start:st,end:en});ui.cursor=clamp(ui.cursor,st,en);ui.sel=clamp(ui.sel,st,en)}
       else{var n={id:uid(),name:name,start:st,end:en};state.semesters.push(n);ui.semId=n.id;resetNav()}
@@ -498,18 +510,18 @@ function tagsHtml(){
   var cnt=function(k,n){return state.events.filter(function(e){return e[k]===n}).length};
   var cats=state.categories.map(function(c){
     var n=cnt('cat',c.name);
-    return '<div class="trow">'+chip(c.name,c.color)+'<code>'+esc(c.color)+'</code><label class="check"><input type="checkbox" data-s="urg" data-n="'+esc(c.name)+'"'+(c.urgent?' checked':'')+'> Due-date colors</label><span class="cnt">'+n+' event'+(n===1?'':'s')+'</span>'+(n===0&&!c.plain?'<button class="btn" data-s="delcat" data-n="'+esc(c.name)+'">Delete</button>':'')+'</div>';
+    return '<div class="trow">'+chip(c.name,c.color)+'<code>'+esc(c.color)+'</code><label class="check"><input type="checkbox" data-s="urg" data-n="'+esc(c.name)+'"'+(c.urgent?' checked':'')+'> '+tx('dueColors')+'</label><span class="cnt">'+nev(n)+'</span>'+(n===0&&!c.plain?'<button class="btn" data-s="delcat" data-n="'+esc(c.name)+'">'+tx('delete')+'</button>':'')+'</div>';
   }).join('');
   var cls=state.classes.map(function(c){
     var n=cnt('cls',c.name);
-    return '<div class="trow">'+chip(c.name,c.color)+'<code>'+esc(c.color)+'</code><span class="cnt">'+n+' event'+(n===1?'':'s')+'</span>'+(n===0?'<button class="btn" data-s="delcls" data-n="'+esc(c.name)+'">Delete</button>':'')+'</div>';
+    return '<div class="trow">'+chip(c.name,c.color)+'<code>'+esc(c.color)+'</code><span class="cnt">'+nev(n)+'</span>'+(n===0?'<button class="btn" data-s="delcls" data-n="'+esc(c.name)+'">'+tx('delete')+'</button>':'')+'</div>';
   }).join('');
   var plain=state.categories.filter(function(c){return c.plain}).map(function(c){return esc(c.name)}).join(', ');
-  return '<h2>Tags</h2><p class="hint">A tag gets a random color the first time it is created and keeps it. The color code is the record of that initial color.'+(plain?' Names under '+plain+' are plain text and are not saved here.':'')+'</p>'
-    +'<h3>Categories</h3>'+cats
-    +'<div class="addrow"><label class="sr" for="nCat">New category</label><input type="text" id="nCat" autocomplete="off" placeholder="New category"><button class="btn" data-s="addcat">Add</button></div><div class="err" id="tErr" role="alert"></div>'
-    +'<h3>Class names</h3>'+(cls||'<div class="none">None yet. A class name is saved the first time you use it on an event.</div>')
-    +'<div class="actions" style="margin-top:14px"><span class="sp"></span><button class="btn primary" data-s="close">Done</button></div>';
+  return '<h2>'+tx('tags')+'</h2><p class="hint">'+tx('tagsHint')+(plain?tx('tagsPlain',{plain:plain}):'')+'</p>'
+    +'<h3>'+tx('categories')+'</h3>'+cats
+    +'<div class="addrow"><label class="sr" for="nCat">'+tx('newCat')+'</label><input type="text" id="nCat" autocomplete="off" placeholder="'+tx('newCat')+'"><button class="btn" data-s="addcat">'+tx('add')+'</button></div><div class="err" id="tErr" role="alert"></div>'
+    +'<h3>'+tx('classNames')+'</h3>'+(cls||'<div class="none">'+tx('noneYet')+'</div>')
+    +'<div class="actions" style="margin-top:14px"><span class="sp"></span><button class="btn primary" data-s="close">'+tx('done')+'</button></div>';
 }
 function openTags(){
   var refresh=function(){$('#sheet .sheet').innerHTML=tagsHtml()};
@@ -520,8 +532,8 @@ function openTags(){
     else if(a==='delcls'){state.classes=state.classes.filter(function(c){return c.name!==b.dataset.n});save();refresh();render()}
     else if(a==='addcat'){
       var v=$('#nCat').value.trim();
-      if(!v){$('#tErr').textContent='Enter a category name.';return}
-      if(state.categories.some(function(c){return c.name.toLowerCase()===v.toLowerCase()})){$('#tErr').textContent='That category already exists.';return}
+      if(!v){$('#tErr').textContent=tx('eCatName');return}
+      if(state.categories.some(function(c){return c.name.toLowerCase()===v.toLowerCase()})){$('#tErr').textContent=tx('eCatDup');return}
       state.categories.push({name:v,color:pickColor(state.classes.concat(state.categories).map(function(x){return x.color})),urgent:true,plain:false});
       save();refresh();render();
     }
@@ -539,7 +551,7 @@ function semName(id){var s=state.semesters.find(function(x){return x.id===id});r
 function toCsv(list){
   var rows=[['Subject','Start Date','Start Time','End Date','End Time','All Day Event','Description','Location','Private']];
   list.forEach(function(e){
-    var desc='Semester '+semName(e.sem);
+    var desc=tx('csvDesc',{sem:semName(e.sem)});
     if(e.time){var a=startDt(e),b=new Date(a.getTime()+36e5);rows.push([gSubject(e),gDate(e.date),gTime(a),gDate(fmt(b)),gTime(b),'False',desc,'','False'])}
     else rows.push([gSubject(e),gDate(e.date),'',gDate(e.date),'','True',desc,'','False']);
   });
@@ -550,7 +562,7 @@ function gcalUrl(e){
   var dates;
   if(e.time){var a=startDt(e),b=new Date(a.getTime()+36e5);dates=cmp(a)+'T'+pad(a.getHours())+pad(a.getMinutes())+'00/'+cmp(b)+'T'+pad(b.getHours())+pad(b.getMinutes())+'00'}
   else dates=e.date.replace(/-/g,'')+'/'+addDays(e.date,1).replace(/-/g,'');
-  return 'https://calendar.google.com/calendar/render?action=TEMPLATE&text='+encodeURIComponent(gSubject(e))+'&dates='+dates+'&details='+encodeURIComponent('Semester '+semName(e.sem));
+  return 'https://calendar.google.com/calendar/render?action=TEMPLATE&text='+encodeURIComponent(gSubject(e))+'&dates='+dates+'&details='+encodeURIComponent(tx('csvDesc',{sem:semName(e.sem)}));
 }
 function openExport(){
   var s=curSem();
@@ -558,14 +570,14 @@ function openExport(){
     var up=$('#xScope').value==='up',t=today();
     return semEvents().filter(function(e){return !up||e.date>=t});
   };
-  var html='<h2>Export to Google Calendar</h2>'
-    +'<div class="field"><label for="xScope">Events to export from '+esc(s.name)+'</label><select id="xScope"><option value="all">All events</option><option value="up">Upcoming only (from today)</option></select><div class="hint" id="xCount"></div></div>'
-    +'<p class="hint">Google Calendar imports a file, so this saves a CSV and you upload it there:</p>'
-    +'<ol class="steps"><li>Click Download CSV below.</li><li>In Google Calendar on a computer, open Settings, then Import &amp; export.</li><li>Choose the CSV file and a calendar, then Import. A new calendar named '+esc(s.name)+' makes it easy to remove later.</li></ol>'
+  var html='<h2>'+tx('xTitle')+'</h2>'
+    +'<div class="field"><label for="xScope">'+tx('xScope',{sem:esc(s.name)})+'</label><select id="xScope"><option value="all">'+tx('xAll')+'</option><option value="up">'+tx('xUp')+'</option></select><div class="hint" id="xCount"></div></div>'
+    +'<p class="hint">'+tx('xHint')+'</p>'
+    +'<ol class="steps"><li>'+tx('xs1')+'</li><li>'+tx('xs2')+'</li><li>'+tx('xs3',{sem:esc(s.name)})+'</li></ol>'
     +'<div id="xFallback"></div><div class="err" id="xErr" role="alert"></div>'
-    +'<div class="actions"><span class="sp"></span><button class="btn" data-s="close">Close</button><button class="btn primary" data-s="dl" id="xDl">Download CSV</button></div>';
+    +'<div class="actions"><span class="sp"></span><button class="btn" data-s="close">'+tx('close')+'</button><button class="btn primary" data-s="dl" id="xDl">'+tx('xDl')+'</button></div>';
   var csvText=function(){return toCsv(pick())};
-  var count=function(){var n=pick().length;$('#xCount').textContent=n+' event'+(n===1?'':'s')+' will be exported.';$('#xDl').disabled=!n;$('#xErr').textContent=n?'':'Nothing to export yet. Add an event first.'};
+  var count=function(){var n=pick().length;$('#xCount').textContent=tx('xCount',{c:nev(n)});$('#xDl').disabled=!n;$('#xErr').textContent=n?'':tx('xNone')};
   openSheet(html,function(a){
     if(a==='close'){closeSheet();return}
     if(a!=='dl')return;
@@ -575,7 +587,7 @@ function openExport(){
       if(!dl){showFallback();return}
       return dl.save({filename:s.name+'-calendar.csv',data:csvText()}).then(function(){$('#xErr').textContent=''},function(err){
         if(err&&err.code==='declined')return;
-        $('#xErr').textContent='Saving a file is not available here.';showFallback();
+        $('#xErr').textContent=tx('xNoSave');showFallback();
       });
     }).catch(showFallback);
   });
@@ -588,7 +600,7 @@ function openExport(){
   }
   function showFallback(){
     var box=$('#xFallback');if(!box||box.firstChild)return;
-    box.innerHTML='<div class="field"><label for="xCsv">Copy this text into a file named '+esc(s.name)+'-calendar.csv</label><textarea id="xCsv" class="csvbox" readonly></textarea></div>';
+    box.innerHTML='<div class="field"><label for="xCsv">'+tx('xCopy',{file:esc(s.name)+'-calendar.csv'})+'</label><textarea id="xCsv" class="csvbox" readonly></textarea></div>';
     var ta=$('#xCsv');ta.value=csvText();ta.focus();ta.select();
   }
   $('#xScope').addEventListener('change',function(){var b=$('#xFallback');if(b)b.innerHTML='';count()});
@@ -600,12 +612,12 @@ function loadSamples(){
   var s=curSem(),base=clamp(today(),s.start,s.end),mon=ws(base);
   DEF_CLASSES.forEach(ensureClass);
   var add=function(date,cat,cls,title,time){if(date<s.start||date>s.end)return;state.events.push({id:uid(),sem:s.id,date:date,time:time||'',cat:cat,cls:cls,title:title,sample:true})};
-  for(var w=0;w<4;w++)[1,3].forEach(function(o){add(addDays(mon,w*7+o),'上課天',DEF_CLASSES[0],'Lecture','10:10')});
-  add(addDays(base,3),CLUB,'','吉他社 迎新','18:30');
-  add(addDays(base,6),'個人報告',DEF_CLASSES[1],'Case write-up');
-  add(addDays(base,11),'考試',DEF_CLASSES[0],'Midterm','09:00');
-  add(addDays(base,19),'分組報告',DEF_CLASSES[2],'Group presentation','14:00');
-  add(addDays(base,70),'期末報告',DEF_CLASSES[4],'Final report');
+  for(var w=0;w<4;w++)[1,3].forEach(function(o){add(addDays(mon,w*7+o),'上課天',DEF_CLASSES[0],tx('sLecture'),'10:10')});
+  add(addDays(base,3),CLUB,'',tx('sClub'),'18:30');
+  add(addDays(base,6),'個人報告',DEF_CLASSES[1],tx('sCase'));
+  add(addDays(base,11),'考試',DEF_CLASSES[0],tx('sMid'),'09:00');
+  add(addDays(base,19),'分組報告',DEF_CLASSES[2],tx('sGroup'),'14:00');
+  add(addDays(base,70),'期末報告',DEF_CLASSES[4],tx('sFinal'));
   save();render();
 }
 
@@ -633,6 +645,7 @@ $('#app').addEventListener('click',function(ev){
   else if(a==='sem-new')openSem(null);
   else if(a==='tags')openTags();
   else if(a==='export')openExport();
+  else if(a==='lang'){setLang(b.dataset.l);render()}
   else if(a==='signin')openSignIn();
   else if(a==='signout')signOut();
   else if(a==='sample')loadSamples();
@@ -690,8 +703,8 @@ function startSync(session){
     if(!row){dbDoc=adapter();writeDb();render();return}
     var mine=state.events.length,theirs=valid(row.data)?row.data.events.length:0;
     if(!mine||JSON.stringify(row.data)===JSON.stringify(state)){adopt(row);return}
-    var html='<h2>Which calendar do you want to keep?</h2><p>This browser has '+mine+' event'+(mine===1?'':'s')+'. Your account has '+theirs+' event'+(theirs===1?'':'s')+'. The one you do not pick is overwritten.</p>'
-      +'<div class="actions"><button class="btn" data-s="cloud">Use my account\'s calendar</button><button class="btn primary" data-s="local">Use this browser\'s calendar</button></div>';
+    var html='<h2>'+tx('keepQ')+'</h2><p>'+tx('keepBody',{a:nev(mine),b:nev(theirs)})+'</p>'
+      +'<div class="actions"><button class="btn" data-s="cloud">'+tx('useCloud')+'</button><button class="btn primary" data-s="local">'+tx('useLocal')+'</button></div>';
     openSheet(html,function(a){
       if(a==='cloud'){closeSheet();adopt(row)}
       else if(a==='local'){closeSheet();dbDoc=adapter();writeDb();render()}
@@ -703,19 +716,19 @@ function signOut(){
   cloud.sb.auth.signOut().then(function(){cloud.uid='';cloud.email='';dbDoc=null;sync='local';render()});
 }
 function openSignIn(){
-  var html='<h2>Sign in to sync</h2><p class="hint">Enter your email. We send a sign-in link, no password needed. Use the same email on every device.</p>'
-    +'<div class="field"><label for="siMail">Email</label><input type="text" id="siMail" inputmode="email" autocomplete="email" placeholder="you@example.com"></div>'
+  var html='<h2>'+tx('siTitle')+'</h2><p class="hint">'+tx('siHint')+'</p>'
+    +'<div class="field"><label for="siMail">'+tx('email')+'</label><input type="text" id="siMail" inputmode="email" autocomplete="email" placeholder="you@example.com"></div>'
     +'<div class="err" id="siErr" role="alert"></div><div class="hint" id="siOk"></div>'
-    +'<div class="actions"><span class="sp"></span><button class="btn" data-s="close">Cancel</button><button class="btn primary" data-s="send">Send link</button></div>';
+    +'<div class="actions"><span class="sp"></span><button class="btn" data-s="close">'+tx('cancel')+'</button><button class="btn primary" data-s="send">'+tx('sendLink')+'</button></div>';
   openSheet(html,function(a,b){
     if(a==='close'){closeSheet();return}
     var mail=$('#siMail').value.trim();
-    if(!/^\S+@\S+\.\S+$/.test(mail)){$('#siErr').textContent='Enter a valid email address.';return}
+    if(!/^\S+@\S+\.\S+$/.test(mail)){$('#siErr').textContent=tx('eMail');return}
     $('#siErr').textContent='';b.disabled=true;
     cloud.sb.auth.signInWithOtp({email:mail,options:{emailRedirectTo:location.origin+location.pathname}}).then(function(r){
       b.disabled=false;
       if(r.error){$('#siErr').textContent=r.error.message;return}
-      $('#siOk').textContent='Check '+mail+' for the sign-in link, then open it in this browser.';
+      $('#siOk').textContent=tx('siSent',{mail:mail});
     });
   });
 }
