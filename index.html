@@ -266,8 +266,8 @@ function migrate(){
 migrate();
 if(!state.classes.length&&!state.events.length){DEF_CLASSES.forEach(function(n){state.classes.push({name:n,color:pickColor(state.categories.concat(state.classes).map(function(c){return c.color}))})})}
 /* Fill in from Supabase: Project settings > API. The anon key is meant to be public. Leave blank for browser-only mode. */
-var SUPABASE_URL='';
-var SUPABASE_ANON_KEY='';
+var SUPABASE_URL='https://jhusmsxcskknvuxwshpj.supabase.co';
+var SUPABASE_ANON_KEY='sb_publishable_J9loYgIHjNZ3QYkAGyQzQQ_dIeqvLm8';
 var cloud={sb:null,enabled:false,uid:'',email:'',lastAt:0,dirty:false};
 var dbDoc=null,sync='local',writing=Promise.resolve(),timer=null;
 function persistLocal(){try{localStorage.setItem(KEY,JSON.stringify(state))}catch(e){}}
