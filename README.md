@@ -12,12 +12,15 @@ Open `index.html` in a browser.
 
 Import this repo at https://vercel.com/new. Framework preset: Other. Leave build and output settings empty.
 
-## Sync across devices (Supabase)
+## Shared calendar (Supabase)
+
+One calendar for every visitor, stored in Supabase. Everyone can view and export it. Only the admin can add or change anything: the Add event, Edit, New and Tags buttons appear after unlocking with the admin passcode. There are no user accounts.
 
 1. Create a free project at https://supabase.com.
-2. SQL Editor: run `supabase.sql`.
-3. Authentication > URL Configuration: set Site URL to your Vercel URL, and add it under Redirect URLs.
-4. Project settings > API: copy the Project URL and the anon public key into `SUPABASE_URL` and `SUPABASE_ANON_KEY` near the top of the script in `index.html`.
-5. Commit and push. Open the site, click "Sign in to sync", and use the emailed link.
+2. SQL Editor: open `supabase.sql`, replace `CHANGE-THIS-PASSCODE` in the last line with your own passcode, then run it.
+3. Project settings > API: copy the Project URL and the anon public key into `SUPABASE_URL` and `SUPABASE_ANON_KEY` near the top of the script in `index.html`.
+4. Commit and push. Open the site, click "Admin" at the bottom, and enter your passcode. The first unlock publishes this browser's calendar if the shared one is empty.
 
-The anon key is designed to be public. Row-level security in `supabase.sql` restricts every user to their own row.
+The anon key is designed to be public. Row-level security makes the table read-only for visitors, and writes only succeed through a function that checks the passcode hash.
+
+To change the passcode later, run the last two statements of `supabase.sql` again with a new value.
