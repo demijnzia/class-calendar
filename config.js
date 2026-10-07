@@ -2,6 +2,6 @@
 // Project settings > API: Project URL and the anon public key (never the service_role key).
 // Leave both empty for a browser-only calendar.
 window.APP_CONFIG = {
-  url: '',
-  key: ''
+  url: 'https://crejuycwvncschhhlprc.supabase.co',
+  key: 'sb_publishable_R2gOTcSDwHTAUzIxnzWYww_DYpu1xdr'
 };
