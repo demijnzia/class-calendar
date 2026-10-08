@@ -238,7 +238,7 @@ var CLUB='社團活動';
 var DEF_CLASSES=['行銷管理A','管理會計與決策A','產業分析','營運與供應鏈管理','海外管理實務研習'];
 var DEF_CATS=['上課天','個人報告','分組報告','期末報告','考試',CLUB,'聚餐'];
 var ADDED_CATS=['聚餐'];
-var DICT={en:{"semester": "Semester", "weeks": "{n} weeks", "switchSem": "Switch semester", "edit": "Edit", "new": "New", "tags": "Tags", "export": "Export to Google Calendar", "language": "Language", "prev": "Previous", "next": "Next", "today": "Today", "view": "View", "v_month": "Month", "v_week": "Week", "v_list": "List", "weekOf": "Week {n} of {tot}", "addEvent": "+ Add event", "addPlain": "Add event", "empty": "No events in {sem} yet. Add one, or load sample events dated around today to see how the due-date colors look.", "loadSample": "Load sample events", "rmSample": "Remove sample events", "lg7": "0–7 days to go", "lg14": "8–14 days to go", "lgPast": "Past events fade", "more": "+{n} more", "addDay": "+ Add on this day", "noDay": "No events on this day.", "addOn": "Add event on {d}", "noEv": "No events", "allClasses": "All classes", "filterClass": "Filter by class", "upOnly": "Upcoming only", "noMatch": "Nothing matches these filters.", "nEv1": "{n} event", "nEvN": "{n} events", "today_": "Today", "tomorrow": "Tomorrow", "yesterday": "Yesterday", "inDays": "in {n} days", "daysAgo": "{n} days ago", "editEvent": "Edit event", "category": "Category", "className": "Class name", "phClass": "e.g. 行銷管理A", "titleOpt": "Title (optional)", "phTitle": "e.g. Midterm, chapters 1–5", "date": "Date", "timeOpt": "Time (optional)", "repeat": "Repeat weekly until the semester ends", "delete": "Delete", "gcal": "Add to Google Calendar", "cancel": "Cancel", "save": "Save", "activity": "Activity name", "savedTag": "Saved tag: ", "newTag": "New tag. A random color is assigned when you save and stays the same afterward.", "tapDel": "Tap again to delete", "eDate": "Pick a date.", "eDateIn": "Pick a date inside {name} ({a} to {b}).", "eAct": "Enter an activity name.", "eCls": "Enter a class name.", "editSem": "Edit semester", "newSem": "New semester", "semName": "Semester name", "phSem": "e.g. 115-2", "startDate": "Start date", "endDate": "End date", "outRange": "Events dated outside the range stay in the List view.", "delSem": "Delete semester", "tapDelSem": "Tap again: deletes {n} events too", "eSemName": "Enter a semester name.", "eSemDates": "Pick a start and end date.", "eSemOrder": "The end date must be on or after the start date.", "dueColors": "Due-date colors", "tagsHint": "A tag gets a random color the first time it is created and keeps it. The color code is the record of that initial color.", "tagsPlain": " Names under {plain} are plain text and are not saved here.", "categories": "Categories", "newCat": "New category", "add": "Add", "classNames": "Class names", "noneYet": "None yet. A class name is saved the first time you use it on an event.", "done": "Done", "eCatName": "Enter a category name.", "eCatDup": "That category already exists.", "xTitle": "Export to Google Calendar", "xScope": "Events to export from {sem}", "xAll": "All events", "xUp": "Upcoming only (from today)", "xHint": "Google Calendar imports a file, so this saves a CSV and you upload it there:", "xs1": "Click Download CSV below.", "xs2": "In Google Calendar on a computer, open Settings, then Import &amp; export.", "xs3": "Choose the CSV file and a calendar, then Import. A new calendar named {sem} makes it easy to remove later.", "xNoSave": "Saving a file is not available here.", "xCopy": "Copy this text into a file named {file}", "close": "Close", "xDl": "Download CSV", "xCount": "{c} will be exported.", "xNone": "Nothing to export yet. Add an event first.", "csvDesc": "Semester {sem}", "sLecture": "Lecture", "sCase": "Case write-up", "sMid": "Midterm", "sGroup": "Group presentation", "sFinal": "Final report", "sClub": "吉他社 迎新", "syncErr": "Could not save to the shared calendar. Try again.", "syncLocal": "Saved in this browser only.", "adminBtn": "Admin", "lock": "Lock", "adminOn": "Admin mode", "adminTitle": "Admin passcode", "adminHint": "Enter the passcode to add events and to edit semesters and tags.", "passcode": "Passcode", "unlock": "Unlock", "eBadPass": "Wrong passcode.", "eNoPass": "Enter the passcode.", "loadErr": "Could not load the shared calendar. Check your connection and refresh.", "emptyView": "No events in {sem} yet.", "syncAdmin": "Admin mode. Changes are saved to the shared calendar.", "syncShared": "Shared calendar. Only the admin can make changes.", "time": "Time", "title": "Title", "import": "Import", "impTitle": "Import events", "impHint": "Choose a JSON file of events, or paste its contents below. Events go into {sem}. Events already in the calendar are skipped.", "impFile": "JSON file", "impPaste": "Or paste JSON", "impGo": "Import", "eImp": "Could not read that. It needs to be the events JSON file.", "impDone": "{n} added, {u} updated with links. {d} already there, {o} outside {sem}.", "link": "Link", "linkOpt": "Link (optional)", "eUrl": "Enter a link that starts with http:// or https://.", "search": "Search events", "clearF": "Clear filters", "nMatch": "{c} found", "showList": "Show all in List view"},zh:{"semester": "學期", "weeks": "共 {n} 週", "switchSem": "切換學期", "edit": "編輯", "new": "新增", "tags": "標籤", "export": "匯出到 Google 日曆", "language": "語言", "prev": "上一頁", "next": "下一頁", "today": "今天", "view": "檢視", "v_month": "月", "v_week": "週", "v_list": "清單", "weekOf": "第 {n} 週，共 {tot} 週", "addEvent": "+ 新增活動", "addPlain": "新增活動", "empty": "{sem} 目前沒有活動。你可以新增活動，或載入以今天為基準的範例活動，看看到期日顏色的效果。", "loadSample": "載入範例活動", "rmSample": "移除範例活動", "lg7": "剩 0–7 天", "lg14": "剩 8–14 天", "lgPast": "已過去的活動會變淡", "more": "還有 {n} 項", "addDay": "+ 在這天新增", "noDay": "這天沒有活動。", "addOn": "在 {d} 新增活動", "noEv": "沒有活動", "allClasses": "所有課程", "filterClass": "依課程篩選", "upOnly": "只看未來的活動", "noMatch": "沒有符合條件的活動。", "nEv1": "{n} 個活動", "nEvN": "{n} 個活動", "today_": "今天", "tomorrow": "明天", "yesterday": "昨天", "inDays": "{n} 天後", "daysAgo": "{n} 天前", "editEvent": "編輯活動", "category": "類別", "className": "課程名稱", "phClass": "例如：行銷管理A", "titleOpt": "標題（選填）", "phTitle": "例如：期中考，第 1–5 章", "date": "日期", "timeOpt": "時間（選填）", "repeat": "每週重複，直到學期結束", "delete": "刪除", "gcal": "加到 Google 日曆", "cancel": "取消", "save": "儲存", "activity": "活動名稱", "savedTag": "已儲存的標籤：", "newTag": "新標籤。儲存時會隨機配色，之後顏色不變。", "tapDel": "再按一次即刪除", "eDate": "請選擇日期。", "eDateIn": "請選擇 {name} 期間內的日期（{a} 至 {b}）。", "eAct": "請輸入活動名稱。", "eCls": "請輸入課程名稱。", "editSem": "編輯學期", "newSem": "新增學期", "semName": "學期名稱", "phSem": "例如：115-2", "startDate": "開始日期", "endDate": "結束日期", "outRange": "日期在範圍外的活動仍會顯示在清單檢視。", "delSem": "刪除學期", "tapDelSem": "再按一次：連同 {n} 個活動一併刪除", "eSemName": "請輸入學期名稱。", "eSemDates": "請選擇開始與結束日期。", "eSemOrder": "結束日期不可早於開始日期。", "dueColors": "到期日顏色", "tagsHint": "標籤第一次建立時會隨機配色，之後顏色不變。色碼即為最初設定顏色的紀錄。", "tagsPlain": "「{plain}」的名稱視為一般文字，不會另外儲存。", "categories": "類別", "newCat": "新類別", "add": "新增", "classNames": "課程名稱", "noneYet": "尚無課程。課程名稱會在你第一次用於活動時儲存。", "done": "完成", "eCatName": "請輸入類別名稱。", "eCatDup": "此類別已存在。", "xTitle": "匯出到 Google 日曆", "xScope": "從 {sem} 匯出的活動", "xAll": "全部活動", "xUp": "只匯出未來的活動（從今天起）", "xHint": "Google 日曆以檔案匯入，所以這裡會儲存 CSV 檔，再由你上傳：", "xs1": "點下方的「下載 CSV」。", "xs2": "在電腦版 Google 日曆開啟「設定」，再選「匯入和匯出」。", "xs3": "選擇 CSV 檔案和要匯入的日曆，然後按「匯入」。建議新建一個名為 {sem} 的日曆，之後要移除會比較方便。", "xNoSave": "此處無法儲存檔案。", "xCopy": "請將以下文字複製到名為 {file} 的檔案", "close": "關閉", "xDl": "下載 CSV", "xCount": "將匯出 {c}。", "xNone": "還沒有可匯出的活動，請先新增活動。", "csvDesc": "學期 {sem}", "sLecture": "上課", "sCase": "個案寫作", "sMid": "期中考", "sGroup": "小組報告", "sFinal": "期末報告", "sClub": "吉他社 迎新", "syncErr": "無法儲存到共用行事曆，請稍後再試。", "syncLocal": "目前只儲存在此瀏覽器。", "adminBtn": "管理員", "lock": "鎖定", "adminOn": "管理員模式", "adminTitle": "管理員密碼", "adminHint": "輸入密碼後，才能新增活動，以及編輯學期與標籤。", "passcode": "密碼", "unlock": "解鎖", "eBadPass": "密碼錯誤。", "eNoPass": "請輸入密碼。", "loadErr": "無法載入共用行事曆，請檢查網路後重新整理。", "emptyView": "{sem} 目前沒有活動。", "syncAdmin": "管理員模式。變更會儲存到共用行事曆。", "syncShared": "共用行事曆。只有管理員可以修改。", "time": "時間", "title": "標題", "import": "匯入", "impTitle": "匯入活動", "impHint": "選擇活動的 JSON 檔案，或將內容貼在下方。活動會加入 {sem}，已存在的活動會略過。", "impFile": "JSON 檔案", "impPaste": "或貼上 JSON", "impGo": "匯入", "eImp": "無法讀取。請使用活動的 JSON 檔案。", "impDone": "已新增 {n} 個，{u} 個補上連結，{d} 個已存在，{o} 個不在 {sem} 範圍內。", "link": "連結", "linkOpt": "連結（選填）", "eUrl": "請輸入以 http:// 或 https:// 開頭的連結。", "search": "搜尋活動", "clearF": "清除篩選", "nMatch": "找到 {c}", "showList": "在清單檢視中顯示全部"}};
+var DICT={en:{"eClsKnown": "Pick an existing class (only the admin can create new ones).", "visitorHint": "Anyone can add events. Only the admin can edit or delete.", "addFail": "Could not add the event. Please try again.", "semester": "Semester", "weeks": "{n} weeks", "switchSem": "Switch semester", "edit": "Edit", "new": "New", "tags": "Tags", "export": "Export to Google Calendar", "language": "Language", "prev": "Previous", "next": "Next", "today": "Today", "view": "View", "v_month": "Month", "v_week": "Week", "v_list": "List", "weekOf": "Week {n} of {tot}", "addEvent": "+ Add event", "addPlain": "Add event", "empty": "No events in {sem} yet. Add one, or load sample events dated around today to see how the due-date colors look.", "loadSample": "Load sample events", "rmSample": "Remove sample events", "lg7": "0–7 days to go", "lg14": "8–14 days to go", "lgPast": "Past events fade", "more": "+{n} more", "addDay": "+ Add on this day", "noDay": "No events on this day.", "addOn": "Add event on {d}", "noEv": "No events", "allClasses": "All classes", "filterClass": "Filter by class", "upOnly": "Upcoming only", "noMatch": "Nothing matches these filters.", "nEv1": "{n} event", "nEvN": "{n} events", "today_": "Today", "tomorrow": "Tomorrow", "yesterday": "Yesterday", "inDays": "in {n} days", "daysAgo": "{n} days ago", "editEvent": "Edit event", "category": "Category", "className": "Class name", "phClass": "e.g. 行銷管理A", "titleOpt": "Title (optional)", "phTitle": "e.g. Midterm, chapters 1–5", "date": "Date", "timeOpt": "Time (optional)", "repeat": "Repeat weekly until the semester ends", "delete": "Delete", "gcal": "Add to Google Calendar", "cancel": "Cancel", "save": "Save", "activity": "Activity name", "savedTag": "Saved tag: ", "newTag": "New tag. A random color is assigned when you save and stays the same afterward.", "tapDel": "Tap again to delete", "eDate": "Pick a date.", "eDateIn": "Pick a date inside {name} ({a} to {b}).", "eAct": "Enter an activity name.", "eCls": "Enter a class name.", "editSem": "Edit semester", "newSem": "New semester", "semName": "Semester name", "phSem": "e.g. 115-2", "startDate": "Start date", "endDate": "End date", "outRange": "Events dated outside the range stay in the List view.", "delSem": "Delete semester", "tapDelSem": "Tap again: deletes {n} events too", "eSemName": "Enter a semester name.", "eSemDates": "Pick a start and end date.", "eSemOrder": "The end date must be on or after the start date.", "dueColors": "Due-date colors", "tagsHint": "A tag gets a random color the first time it is created and keeps it. The color code is the record of that initial color.", "tagsPlain": " Names under {plain} are plain text and are not saved here.", "categories": "Categories", "newCat": "New category", "add": "Add", "classNames": "Class names", "noneYet": "None yet. A class name is saved the first time you use it on an event.", "done": "Done", "eCatName": "Enter a category name.", "eCatDup": "That category already exists.", "xTitle": "Export to Google Calendar", "xScope": "Events to export from {sem}", "xAll": "All events", "xUp": "Upcoming only (from today)", "xHint": "Google Calendar imports a file, so this saves a CSV and you upload it there:", "xs1": "Click Download CSV below.", "xs2": "In Google Calendar on a computer, open Settings, then Import &amp; export.", "xs3": "Choose the CSV file and a calendar, then Import. A new calendar named {sem} makes it easy to remove later.", "xNoSave": "Saving a file is not available here.", "xCopy": "Copy this text into a file named {file}", "close": "Close", "xDl": "Download CSV", "xCount": "{c} will be exported.", "xNone": "Nothing to export yet. Add an event first.", "csvDesc": "Semester {sem}", "sLecture": "Lecture", "sCase": "Case write-up", "sMid": "Midterm", "sGroup": "Group presentation", "sFinal": "Final report", "sClub": "吉他社 迎新", "syncErr": "Could not save to the shared calendar. Try again.", "syncLocal": "Saved in this browser only.", "adminBtn": "Admin", "lock": "Lock", "adminOn": "Admin mode", "adminTitle": "Admin passcode", "adminHint": "Enter the passcode to add events and to edit semesters and tags.", "passcode": "Passcode", "unlock": "Unlock", "eBadPass": "Wrong passcode.", "eNoPass": "Enter the passcode.", "loadErr": "Could not load the shared calendar. Check your connection and refresh.", "emptyView": "No events in {sem} yet.", "syncAdmin": "Admin mode. Changes are saved to the shared calendar.", "syncShared": "Shared calendar. Only the admin can make changes.", "time": "Time", "title": "Title", "import": "Import", "impTitle": "Import events", "impHint": "Choose a JSON or CSV file of events, or paste its contents below. Events go into {sem} unless the file names another semester. Events already in the calendar are skipped.", "impFile": "JSON or CSV file", "impPaste": "Or paste JSON or CSV", "impGo": "Import", "eImp": "Could not read that. Use the events JSON file or a CSV exported from this calendar.", "impDone": "{n} added, {u} updated with links. {d} already there, {o} outside {sem}.", "link": "Link", "linkOpt": "Link (optional)", "eUrl": "Enter a link that starts with http:// or https://.", "search": "Search events", "clearF": "Clear filters", "nMatch": "{c} found", "showList": "Show all in List view", "csvExp": "Export CSV", "csvTitle": "Export calendar to CSV", "csvHint": "A spreadsheet copy of your events, useful as a backup. Import can read this file again.", "csvScope": "What to export", "csvThis": "This semester ({sem})", "csvAll": "All semesters"},zh:{"eClsKnown": "請選擇既有課程（只有管理員可新增課程）。", "visitorHint": "任何人都可以新增活動；只有管理員可以編輯或刪除。", "addFail": "無法新增活動，請再試一次。", "semester": "學期", "weeks": "共 {n} 週", "switchSem": "切換學期", "edit": "編輯", "new": "新增", "tags": "標籤", "export": "匯出到 Google 日曆", "language": "語言", "prev": "上一頁", "next": "下一頁", "today": "今天", "view": "檢視", "v_month": "月", "v_week": "週", "v_list": "清單", "weekOf": "第 {n} 週，共 {tot} 週", "addEvent": "+ 新增活動", "addPlain": "新增活動", "empty": "{sem} 目前沒有活動。你可以新增活動，或載入以今天為基準的範例活動，看看到期日顏色的效果。", "loadSample": "載入範例活動", "rmSample": "移除範例活動", "lg7": "剩 0–7 天", "lg14": "剩 8–14 天", "lgPast": "已過去的活動會變淡", "more": "還有 {n} 項", "addDay": "+ 在這天新增", "noDay": "這天沒有活動。", "addOn": "在 {d} 新增活動", "noEv": "沒有活動", "allClasses": "所有課程", "filterClass": "依課程篩選", "upOnly": "只看未來的活動", "noMatch": "沒有符合條件的活動。", "nEv1": "{n} 個活動", "nEvN": "{n} 個活動", "today_": "今天", "tomorrow": "明天", "yesterday": "昨天", "inDays": "{n} 天後", "daysAgo": "{n} 天前", "editEvent": "編輯活動", "category": "類別", "className": "課程名稱", "phClass": "例如：行銷管理A", "titleOpt": "標題（選填）", "phTitle": "例如：期中考，第 1–5 章", "date": "日期", "timeOpt": "時間（選填）", "repeat": "每週重複，直到學期結束", "delete": "刪除", "gcal": "加到 Google 日曆", "cancel": "取消", "save": "儲存", "activity": "活動名稱", "savedTag": "已儲存的標籤：", "newTag": "新標籤。儲存時會隨機配色，之後顏色不變。", "tapDel": "再按一次即刪除", "eDate": "請選擇日期。", "eDateIn": "請選擇 {name} 期間內的日期（{a} 至 {b}）。", "eAct": "請輸入活動名稱。", "eCls": "請輸入課程名稱。", "editSem": "編輯學期", "newSem": "新增學期", "semName": "學期名稱", "phSem": "例如：115-2", "startDate": "開始日期", "endDate": "結束日期", "outRange": "日期在範圍外的活動仍會顯示在清單檢視。", "delSem": "刪除學期", "tapDelSem": "再按一次：連同 {n} 個活動一併刪除", "eSemName": "請輸入學期名稱。", "eSemDates": "請選擇開始與結束日期。", "eSemOrder": "結束日期不可早於開始日期。", "dueColors": "到期日顏色", "tagsHint": "標籤第一次建立時會隨機配色，之後顏色不變。色碼即為最初設定顏色的紀錄。", "tagsPlain": "「{plain}」的名稱視為一般文字，不會另外儲存。", "categories": "類別", "newCat": "新類別", "add": "新增", "classNames": "課程名稱", "noneYet": "尚無課程。課程名稱會在你第一次用於活動時儲存。", "done": "完成", "eCatName": "請輸入類別名稱。", "eCatDup": "此類別已存在。", "xTitle": "匯出到 Google 日曆", "xScope": "從 {sem} 匯出的活動", "xAll": "全部活動", "xUp": "只匯出未來的活動（從今天起）", "xHint": "Google 日曆以檔案匯入，所以這裡會儲存 CSV 檔，再由你上傳：", "xs1": "點下方的「下載 CSV」。", "xs2": "在電腦版 Google 日曆開啟「設定」，再選「匯入和匯出」。", "xs3": "選擇 CSV 檔案和要匯入的日曆，然後按「匯入」。建議新建一個名為 {sem} 的日曆，之後要移除會比較方便。", "xNoSave": "此處無法儲存檔案。", "xCopy": "請將以下文字複製到名為 {file} 的檔案", "close": "關閉", "xDl": "下載 CSV", "xCount": "將匯出 {c}。", "xNone": "還沒有可匯出的活動，請先新增活動。", "csvDesc": "學期 {sem}", "sLecture": "上課", "sCase": "個案寫作", "sMid": "期中考", "sGroup": "小組報告", "sFinal": "期末報告", "sClub": "吉他社 迎新", "syncErr": "無法儲存到共用行事曆，請稍後再試。", "syncLocal": "目前只儲存在此瀏覽器。", "adminBtn": "管理員", "lock": "鎖定", "adminOn": "管理員模式", "adminTitle": "管理員密碼", "adminHint": "輸入密碼後，才能新增活動，以及編輯學期與標籤。", "passcode": "密碼", "unlock": "解鎖", "eBadPass": "密碼錯誤。", "eNoPass": "請輸入密碼。", "loadErr": "無法載入共用行事曆，請檢查網路後重新整理。", "emptyView": "{sem} 目前沒有活動。", "syncAdmin": "管理員模式。變更會儲存到共用行事曆。", "syncShared": "共用行事曆。只有管理員可以修改。", "time": "時間", "title": "標題", "import": "匯入", "impTitle": "匯入活動", "impHint": "選擇活動的 JSON 或 CSV 檔案，或將內容貼在下方。活動會加入 {sem}，除非檔案指定了其他學期。已存在的活動會略過。", "impFile": "JSON 或 CSV 檔案", "impPaste": "或貼上 JSON 或 CSV", "impGo": "匯入", "eImp": "無法讀取。請使用活動 JSON 檔，或由此行事曆匯出的 CSV。", "impDone": "已新增 {n} 個，{u} 個補上連結，{d} 個已存在，{o} 個不在 {sem} 範圍內。", "link": "連結", "linkOpt": "連結（選填）", "eUrl": "請輸入以 http:// 或 https:// 開頭的連結。", "search": "搜尋活動", "clearF": "清除篩選", "nMatch": "找到 {c}", "showList": "在清單檢視中顯示全部", "csvExp": "匯出 CSV", "csvTitle": "匯出行事曆為 CSV", "csvHint": "活動的試算表備份。「匯入」可以再次讀取這個檔案。", "csvScope": "匯出範圍", "csvThis": "本學期（{sem}）", "csvAll": "所有學期"}};
 var LANG='en';
 try{var _l=localStorage.getItem('semester-calendar-lang');LANG=_l==='zh'||_l==='en'?_l:((navigator.language||'').toLowerCase().indexOf('zh')===0?'zh':'en')}catch(e){}
 function tx(k,v){var s=DICT[LANG][k];if(s===undefined)s=DICT.en[k];if(s===undefined)s=k;return s.replace(/\{(\w+)\}/g,function(m,x){return v&&v[x]!==undefined?v[x]:m})}
@@ -314,13 +314,23 @@ var cloud={sb:null,enabled:SHARED,lastAt:0,dirty:false};
 var admin={on:false,pass:''};
 var sync=SHARED?'ok':'local',writing=Promise.resolve(),timer=null;
 function canEdit(){return !SHARED||admin.on}
+function isVisitor(){return SHARED&&!admin.on}
+var cloud_seen={};function markSeen(){cloud_seen={};state.events.forEach(function(e){cloud_seen[e.id]=1})}
 function persistLocal(){try{localStorage.setItem(SHARED?CACHE_KEY:KEY,JSON.stringify(state))}catch(e){}}
 function syncText(){if(!SHARED)return tx('syncLocal');if(sync==='error')return tx('syncErr');if(sync==='loadfail')return tx('loadErr');return admin.on?tx('syncAdmin'):tx('syncShared')}
 function paintSync(){var el=$('#sync');if(el)el.textContent=syncText()}
 function writeDb(){
-  if(!SHARED||!admin.on||!cloud.sb)return;var json=JSON.stringify(state);
-  writing=writing.then(function(){return cloud.sb.rpc('save_calendar',{p_pass:admin.pass,p_data:JSON.parse(json)})})
-    .then(function(r){if(r.error)throw r.error;sync='ok';cloud.dirty=false;cloud.lastAt=Date.now();paintSync()})
+  if(!SHARED||!admin.on||!cloud.sb)return;var merged=false;
+  writing=writing.then(function(){
+    return fetchRow().then(function(row){
+      if(row&&valid(row.data)&&Array.isArray(row.data.events)){
+        var have={};state.events.forEach(function(e){have[e.id]=1});
+        row.data.events.forEach(function(e){if(e&&e.id&&!have[e.id]&&!cloud_seen[e.id]){state.events.push(e);have[e.id]=1;merged=true}});
+      }
+      persistLocal();
+      return cloud.sb.rpc('save_calendar',{p_pass:admin.pass,p_data:JSON.parse(JSON.stringify(state))});
+    });
+  }).then(function(r){if(r.error)throw r.error;markSeen();sync='ok';cloud.dirty=false;cloud.lastAt=Date.now();paintSync();if(merged)render()})
     .catch(function(){sync='error';paintSync()});
 }
 function save(){cloud.dirty=true;persistLocal();clearTimeout(timer);timer=setTimeout(writeDb,500)}
@@ -386,7 +396,7 @@ function header(s){
   var opts=state.semesters.slice().sort(function(a,b){return a.start<b.start?-1:1}).map(function(x){return '<option value="'+x.id+'"'+(x.id===s.id?' selected':'')+'>'+esc(x.name)+'</option>'}).join('');
   return '<header class="top"><div class="ident"><div class="eyebrow">'+tx('semester')+'</div><h1>'+esc(s.name)+'</h1><div class="meta">'+s.start+' → '+s.end+' · '+tx('weeks',{n:weeks})+'</div></div>'
     +'<div class="ctl"><label class="sr" for="semSel">'+tx('switchSem')+'</label><select id="semSel">'+opts+'</select>'
-    +(canEdit()?'<button class="btn" data-act="sem-edit">'+tx('edit')+'</button><button class="btn" data-act="sem-new">'+tx('new')+'</button><button class="btn" data-act="tags">'+tx('tags')+'</button><button class="btn" data-act="import">'+tx('import')+'</button>':'')+'<button class="btn" data-act="export" title="'+tx('xHint')+'">'+tx('export')+'</button>'
+    +(canEdit()?'<button class="btn" data-act="sem-edit">'+tx('edit')+'</button><button class="btn" data-act="sem-new">'+tx('new')+'</button><button class="btn" data-act="tags">'+tx('tags')+'</button><button class="btn" data-act="import">'+tx('import')+'</button><button class="btn" data-act="csvexp">'+tx('csvExp')+'</button>':'')+'<button class="btn" data-act="export" title="'+tx('xHint')+'">'+tx('export')+'</button>'
     +'<div class="seg" role="group" aria-label="'+tx('language')+'"><button class="tab" data-act="lang" data-l="en" aria-pressed="'+(LANG==='en')+'">EN</button><button class="tab" data-act="lang" data-l="zh" aria-pressed="'+(LANG==='zh')+'">中文</button></div></div></header>';
 }
 function navHtml(label,sub,pd,nd){
@@ -402,10 +412,10 @@ function bar(s){
     var st=ws(ui.cursor),en=addDays(st,6),n=Math.floor(diff(ws(s.start),st)/7)+1,tot=Math.floor(diff(ws(s.start),ws(s.end))/7)+1;
     nav=navHtml(rangeLabel(st,en),tx('weekOf',{n:n,tot:tot}),st<=ws(s.start),st>=ws(s.end));
   }
-  return '<div class="bar"><div class="seg" role="group" aria-label="'+tx('view')+'">'+tabs+'</div>'+nav+(canEdit()?'<button class="btn primary add" data-act="add">'+tx('addEvent')+'</button>':'')+'</div>';
+  return '<div class="bar"><div class="seg" role="group" aria-label="'+tx('view')+'">'+tabs+'</div>'+nav+'<button class="btn primary add" data-act="add">'+tx('addEvent')+'</button>'+'</div>';
 }
 function emptyNote(s){
-  if(!canEdit())return '<div class="note"><p>'+tx('emptyView',{sem:esc(s.name)})+'</p></div>';
+  if(!canEdit())return '<div class="note"><p>'+tx('emptyView',{sem:esc(s.name)})+'</p><div class="ctl"><button class="btn primary" data-act="add">'+tx('addPlain')+'</button></div></div>';
   return '<div class="note"><p>'+tx('empty',{sem:esc(s.name)})+'</p><div class="ctl"><button class="btn primary" data-act="add">'+tx('addPlain')+'</button><button class="btn" data-act="sample">'+tx('loadSample')+'</button></div></div>';
 }
 function footer(){
@@ -437,13 +447,13 @@ function dayPanel(map){
   var rows=list.map(function(e){
     return '<button class="drow" data-act="edit" data-id="'+e.id+'">'+(e.time?'<span class="time">'+esc(e.time)+'</span>':'')+'<span class="chips">'+catChip(e)+clsChip(e)+'</span>'+(e.title?'<span>'+esc(e.title)+lk(e)+'</span>':'')+'</button>';
   }).join('');
-  return '<section class="panel" id="dayPanel"><div class="panel-h"><div><h2>'+title+'</h2><span class="rel">'+rel(ds)+'</span></div>'+(canEdit()?'<button class="btn" data-act="add" data-d="'+ds+'">'+tx('addDay')+'</button>':'')+'</div>'+(rows||'<div class="none">'+tx('noDay')+'</div>')+'</section>';
+  return '<section class="panel" id="dayPanel"><div class="panel-h"><div><h2>'+title+'</h2><span class="rel">'+rel(ds)+'</span></div>'+'<button class="btn" data-act="add" data-d="'+ds+'">'+tx('addDay')+'</button>'+'</div>'+(rows||'<div class="none">'+tx('noDay')+'</div>')+'</section>';
 }
 function weekView(s,map){
   var st=ws(ui.cursor),t=today(),out='';
   for(var i=0;i<7;i++){
     var ds=addDays(st,i),d=parse(ds),list=map[ds]||[],o=ds<s.start||ds>s.end;
-    out+='<section class="wday'+(ds===t?' today':'')+(o?' out':'')+'"><header><span class="wd">'+wd()[i]+'</span><span class="wn">'+d.getDate()+'</span>'+(canEdit()?'<button class="mini" data-act="add" data-d="'+ds+'" aria-label="'+tx('addOn',{d:ds})+'">+</button>':'')+'</header><div class="wevs">'
+    out+='<section class="wday'+(ds===t?' today':'')+(o?' out':'')+'"><header><span class="wd">'+wd()[i]+'</span><span class="wn">'+d.getDate()+'</span>'+'<button class="mini" data-act="add" data-d="'+ds+'" aria-label="'+tx('addOn',{d:ds})+'">+</button>'+'</header><div class="wevs">'
       +(list.map(function(e){
         return '<button class="wev" data-act="edit" data-id="'+e.id+'">'+(e.time?'<span class="time">'+esc(e.time)+'</span>':'')+'<span class="chips">'+catChip(e)+clsChip(e)+'</span>'+(e.title?'<span class="wt">'+esc(e.title)+lk(e)+'</span>':'')+'</button>';
       }).join('')||'<div class="none">'+tx('noEv')+'</div>')+'</div></section>';
@@ -488,7 +498,8 @@ function openEvent(id,date){
     +'<div class="field"><label for="fUrl">'+tx('linkOpt')+'</label><input type="text" id="fUrl" inputmode="url" autocomplete="off" placeholder="https://" value="'+esc(f.url)+'"></div>'
     +'<div class="row2"><div class="field"><label for="fDate">'+tx('date')+'</label><input type="date" id="fDate" min="'+s.start+'" max="'+s.end+'" value="'+f.date+'"></div>'
     +'<div class="field"><label for="fTime">'+tx('timeOpt')+'</label><input type="time" id="fTime" value="'+esc(f.time)+'"></div></div>'
-    +(ex?'':'<label class="check" style="margin-bottom:10px"><input type="checkbox" id="fRep"> '+tx('repeat')+'</label>')
+    +(ex||isVisitor()?'':'<label class="check" style="margin-bottom:10px"><input type="checkbox" id="fRep"> '+tx('repeat')+'</label>')
+    +(isVisitor()&&!ex?'<p class="hint">'+tx('visitorHint')+'</p>':'')
     +'<div class="err" id="fErr" role="alert"></div>'
     +'<div class="actions">'+(ex?'<button class="btn warnbtn" data-s="del">'+tx('delete')+'</button><a class="btn" href="'+esc(gcalUrl(ex))+'" target="_blank" rel="noopener">'+tx('gcal')+'</a>':'')+'<span class="sp"></span><button class="btn" data-s="close">'+tx('cancel')+'</button><button class="btn primary" data-s="save">'+tx('save')+'</button></div>';
   function syncCat(){
@@ -501,7 +512,7 @@ function openEvent(id,date){
     var v=$('#fCls').value.trim(),el=$('#fClsHint');
     if(!v){el.textContent='';return}
     var c=clsOf(v);
-    el.innerHTML=c?tx('savedTag')+chip(v,c.color):tx('newTag');
+    el.innerHTML=c?tx('savedTag')+chip(v,c.color):(isVisitor()?'':tx('newTag'));
   }
   openSheet(html,function(a,b){
     if(a==='close')closeSheet();
@@ -520,6 +531,17 @@ function openEvent(id,date){
       else if(!plain&&!cls)err=tx('eCls');
       else if(url&&!safeUrl(url))err=tx('eUrl');
       if(err){$('#fErr').textContent=err;return}
+      if(!plain&&isVisitor()&&!clsOf(cls))err=tx('eClsKnown');
+      if(err){$('#fErr').textContent=err;return}
+      if(!ex&&isVisitor()){
+        var btn=b;btn.disabled=true;
+        cloud.sb.rpc('add_event',{p_event:{sem:s.id,date:date,time:time,cat:f.cat,cls:plain?'':cls,title:title,url:url}}).then(function(r){
+          btn.disabled=false;
+          if(r.error){$('#fErr').textContent=r.error.message||tx('addFail');return}
+          ui.sel=date;ui.cursor=date;closeSheet();refresh(false);
+        },function(){btn.disabled=false;$('#fErr').textContent=tx('addFail')});
+        return;
+      }
       if(!plain)ensureClass(cls);
       if(ex){Object.assign(ex,{cat:f.cat,cls:plain?'':cls,title:title,url:url,date:date,time:time});delete ex.sample}
       else{
@@ -610,11 +632,76 @@ function openTags(){
 }
 
 
+/* ---------- CSV backup (admin) ---------- */
+function parseCsv(text){
+  var rows=[],row=[],f='',q=false,i=0;
+  text=text.replace(/^﻿/,'');
+  for(;i<text.length;i++){
+    var c=text[i];
+    if(q){if(c==='"'){if(text[i+1]==='"'){f+='"';i++}else q=false}else f+=c}
+    else if(c==='"')q=true;
+    else if(c===','){row.push(f);f=''}
+    else if(c==='\n'||c==='\r'){if(c==='\r'&&text[i+1]==='\n')i++;row.push(f);f='';if(row.some(function(x){return x!==''}))rows.push(row);row=[]}
+    else f+=c;
+  }
+  row.push(f);if(row.some(function(x){return x!==''}))rows.push(row);
+  return rows;
+}
+function parseImport(text){
+  var t=text.trim();
+  if(t[0]==='{'||t[0]==='['){var j=JSON.parse(t);return Array.isArray(j)?{events:j}:j}
+  var rows=parseCsv(t);if(rows.length<2)return null;
+  var names={semester:'semester',date:'date',time:'time',category:'cat',cat:'cat',class:'cls',cls:'cls',title:'title',link:'url',url:'url'};
+  var cols=rows[0].map(function(x){return names[x.trim().toLowerCase()]||''});
+  if(cols.indexOf('date')<0||cols.indexOf('cat')<0)return null;
+  var events=rows.slice(1).map(function(r){var o={};cols.forEach(function(c,k){if(c)o[c]=(r[k]||'').trim()});return o});
+  return {events:events};
+}
+function eventsCsv(list){
+  var rows=[['Semester','Date','Time','Category','Class','Title','Link']];
+  list.forEach(function(e){rows.push([semName(e.sem),e.date,e.time||'',e.cat,e.cls||'',e.title||'',e.url||''])});
+  return rows.map(function(r){return r.map(csvCell).join(',')}).join('\r\n');
+}
+function openCsvExport(){
+  var s=curSem();
+  var pick=function(){return($('#cScope').value==='all'?state.events.slice():state.events.filter(function(e){return e.sem===s.id})).sort(function(a,b){return a.date<b.date?-1:a.date>b.date?1:cmp(a,b)})};
+  var html='<h2>'+tx('csvTitle')+'</h2><p class="hint">'+tx('csvHint')+'</p>'
+    +'<div class="field"><label for="cScope">'+tx('csvScope')+'</label><select id="cScope"><option value="this">'+tx('csvThis',{sem:esc(s.name)})+'</option><option value="all">'+tx('csvAll')+'</option></select><div class="hint" id="cCount"></div></div>'
+    +'<div id="cFallback"></div><div class="err" id="cErr" role="alert"></div>'
+    +'<div class="actions"><span class="sp"></span><button class="btn" data-s="close">'+tx('close')+'</button><button class="btn primary" data-s="dl" id="cDl">'+tx('xDl')+'</button></div>';
+  var fname=function(){return($('#cScope').value==='all'?'calendar-all':s.name+'-events')+'.csv'};
+  var count=function(){var n=pick().length;$('#cCount').textContent=nev(n);$('#cDl').disabled=!n;$('#cErr').textContent=n?'':tx('xNone')};
+  function showFallback(){
+    var box=$('#cFallback');if(!box||box.firstChild)return;
+    box.innerHTML='<div class="field"><label for="cCsv">'+tx('xCopy',{file:esc(fname())})+'</label><textarea id="cCsv" class="csvbox" readonly></textarea></div>';
+    var ta=$('#cCsv');ta.value=eventsCsv(pick());ta.focus();ta.select();
+  }
+  function blobSave(){
+    try{
+      var url=URL.createObjectURL(new Blob(['﻿'+eventsCsv(pick())],{type:'text/csv;charset=utf-8'}));
+      var a=document.createElement('a');a.href=url;a.download=fname();document.body.appendChild(a);a.click();a.remove();
+      setTimeout(function(){URL.revokeObjectURL(url)},1000);
+    }catch(e){showFallback()}
+  }
+  openSheet(html,function(a){
+    if(a==='close'){closeSheet();return}
+    if(a!=='dl')return;
+    var cl=window.claude;
+    if(!cl||!cl.use){blobSave();return}
+    cl.use('downloads').then(function(dl){
+      if(!dl){showFallback();return}
+      return dl.save({filename:fname(),data:eventsCsv(pick())}).catch(function(err){if(!(err&&err.code==='declined')){$('#cErr').textContent=tx('xNoSave');showFallback()}});
+    }).catch(showFallback);
+  });
+  $('#cScope').addEventListener('change',function(){var b=$('#cFallback');if(b)b.innerHTML='';count()});
+  count();
+}
+
 /* ---------- import events (admin) ---------- */
 function openImport(){
   var s=curSem();
   var html='<h2>'+tx('impTitle')+'</h2><p class="hint">'+tx('impHint',{sem:esc(s.name)})+'</p>'
-    +'<div class="field"><label for="impFile">'+tx('impFile')+'</label><input type="file" id="impFile" accept=".json,application/json"></div>'
+    +'<div class="field"><label for="impFile">'+tx('impFile')+'</label><input type="file" id="impFile" accept=".json,.csv,application/json,text/csv"></div>'
     +'<div class="field"><label for="impText">'+tx('impPaste')+'</label><textarea id="impText" class="csvbox"></textarea></div>'
     +'<div class="err" id="impErr" role="alert"></div><div class="hint" id="impOk"></div>'
     +'<div class="actions"><span class="sp"></span><button class="btn" data-s="close">'+tx('close')+'</button><button class="btn primary" data-s="go">'+tx('impGo')+'</button></div>';
@@ -622,21 +709,22 @@ function openImport(){
     if(a==='close'){closeSheet();return}
     $('#impErr').textContent='';$('#impOk').textContent='';
     var data;
-    try{data=JSON.parse($('#impText').value);if(!data||!Array.isArray(data.events))throw 0}catch(e){$('#impErr').textContent=tx('eImp');return}
+    try{data=parseImport($('#impText').value);if(!data||!Array.isArray(data.events))throw 0}catch(e){$('#impErr').textContent=tx('eImp');return}
     var used=function(){return state.categories.concat(state.classes).map(function(x){return x.color})};
     (data.categories||[]).forEach(function(c){
       if(c&&c.name&&!catOf(c.name))state.categories.push({name:c.name,color:pickColor(used()),urgent:c.urgent!==false,plain:!!c.plain});
     });
-    var have={};state.events.forEach(function(e){if(e.sem===s.id)have[[e.date,e.time||'',e.cat,e.cls||'',e.title||''].join('|')]=e});
+    var have={};state.events.forEach(function(e){have[[e.sem,e.date,e.time||'',e.cat,e.cls||'',e.title||''].join('|')]=e});
     var added=0,upd=0,dup=0,out=0;
     data.events.forEach(function(e){
       if(!e||!/^\d{4}-\d{2}-\d{2}$/.test(e.date||'')||!e.cat)return;
-      if(e.date<s.start||e.date>s.end){out++;return}
+      var tg=(e.semester&&state.semesters.find(function(x){return x.name===e.semester}))||s;
+      if(e.date<tg.start||e.date>tg.end){out++;return}
       if(!catOf(e.cat))state.categories.push({name:e.cat,color:pickColor(used()),urgent:true,plain:!e.cls});
-      var key=[e.date,e.time||'',e.cat,e.cls||'',e.title||''].join('|');
+      var key=[tg.id,e.date,e.time||'',e.cat,e.cls||'',e.title||''].join('|');
       if(have[key]){var o=have[key];if(safeUrl(e.url)&&!o.url){o.url=e.url;upd++}else dup++;return}
       if(e.cls)ensureClass(e.cls);
-      var ne={id:uid(),sem:s.id,date:e.date,time:e.time||'',cat:e.cat,cls:e.cls||'',title:e.title||'',url:safeUrl(e.url)};state.events.push(ne);have[key]=ne;added++;
+      var ne={id:uid(),sem:tg.id,date:e.date,time:e.time||'',cat:e.cat,cls:e.cls||'',title:e.title||'',url:safeUrl(e.url)};state.events.push(ne);have[key]=ne;added++;
     });
     if(added||upd||data.categories){save();render()}
     $('#impOk').textContent=tx('impDone',{n:added,u:upd,d:dup,o:out,sem:s.name});
@@ -745,12 +833,13 @@ $('#app').addEventListener('click',function(ev){
     ui.sel=b.dataset.d;render();
     if(window.matchMedia('(max-width:640px)').matches){var p=$('#dayPanel');if(p)p.scrollIntoView({block:'nearest',behavior:'smooth'})}
   }
-  else if(a==='add'){if(canEdit())openEvent(null,b.dataset.d)}
+  else if(a==='add'){openEvent(null,b.dataset.d)}
   else if(a==='edit'){if(canEdit())openEvent(b.dataset.id);else openEventView(b.dataset.id)}
   else if(a==='sem-edit'){if(canEdit())openSem(curSem().id)}
   else if(a==='sem-new'){if(canEdit())openSem(null)}
   else if(a==='tags'){if(canEdit())openTags()}
   else if(a==='import'){if(canEdit())openImport()}
+  else if(a==='csvexp'){if(canEdit())openCsvExport()}
   else if(a==='export')openExport();
   else if(a==='lang'){setLang(b.dataset.l);render()}
   else if(a==='unlock')openUnlock();
@@ -786,7 +875,7 @@ function refresh(first){
     if(row&&valid(row.data)){state=row.data;migrate();cloud.lastAt=Date.parse(row.updated_at)}
     else if(admin.on){if(legacy&&!state.events.length&&legacy.events.length)state=legacy;migrate()}
     else{state=makeDefault();migrate()}
-    persistLocal();sync='ok';
+    markSeen();persistLocal();sync='ok';
     if(first||!state.semesters.some(function(x){return x.id===ui.semId})){ui.semId=defaultSem().id;resetNav()}
     render();
     if(!row&&admin.on)writeDb();
