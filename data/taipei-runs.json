@@ -1,0 +1,190 @@
+{
+  "updated": "2026-10-26",
+  "sources": [
+    "https://www.sportsnet.org.tw/schedule.php",
+    "https://irunner.biji.co/list"
+  ],
+  "events": [
+    {
+      "id": "irunner-CIMarathon2026",
+      "name": "2026 華航馬拉松-星光夜跑",
+      "date": "2026-10-31",
+      "city": "臺北市",
+      "venue": "大佳河濱公園",
+      "url": "https://irunner.biji.co/CIMarathon2026",
+      "source": "irunner",
+      "regStart": "2026-04-21T14:30",
+      "regEnd": "2026-05-21T23:59",
+      "note": "報名全數額滿"
+    },
+    {
+      "id": "irunner-2026letsrun",
+      "name": "Let’s Run空英1919路跑",
+      "date": "2026-10-31",
+      "city": "新北市",
+      "venue": "新店區碧潭東岸廣場",
+      "url": "https://irunner.biji.co/2026letsrun",
+      "source": "irunner",
+      "regStart": "2026-06-01T09:00",
+      "regEnd": "2026-08-31T23:59"
+    },
+    {
+      "id": "irunner-2026SpongeBob-TPE",
+      "name": "2026 海綿寶寶 人生馬拉松 人生是場謎(新北場)",
+      "date": "2026-11-01",
+      "city": "新北市",
+      "venue": "新北市二重疏洪運動公園",
+      "url": "https://irunner.biji.co/2026SpongeBob-TPE",
+      "source": "irunner",
+      "regStart": "2026-06-08T12:00",
+      "regEnd": "2026-07-31T23:59"
+    },
+    {
+      "id": "sportsnet-20261101",
+      "name": "2026臺灣國家公園馬拉松-陽明山",
+      "date": "2026-11-01",
+      "city": "臺北市",
+      "venue": "陽明山中山樓八卦升旗臺",
+      "url": "http://www.sportsnet.org.tw/20261101_web/",
+      "source": "sportsnet",
+      "regStart": "2026-06-02T14:00",
+      "regEnd": "2026-08-31T17:00"
+    },
+    {
+      "id": "irunner-2026JujutsuKaisenRUN3",
+      "name": "咒術迴戰 懷玉玉折 最強路跑（新北場）",
+      "date": "2026-11-08",
+      "city": "新北市",
+      "venue": "新北微風運河園區",
+      "url": "https://irunner.biji.co/2026JujutsuKaisenRUN3",
+      "source": "irunner",
+      "regStart": "2026-08-01T09:00",
+      "regEnd": "2026-08-14T23:59"
+    },
+    {
+      "id": "irunner-2026-2mofrun03k",
+      "name": "財政部115年統一發票盃路跑臺北場-休閒組(3km)",
+      "date": "2026-11-08",
+      "city": "臺北市",
+      "venue": "大佳河濱公園",
+      "url": "https://irunner.biji.co/2026-2mofrun03k",
+      "source": "irunner",
+      "regStart": "2026-07-21T17:00",
+      "regEnd": "2026-10-31T23:59",
+      "note": "已額滿"
+    },
+    {
+      "id": "irunner-2026-2mofrun10k-21k",
+      "name": "財政部115年統一發票盃路跑臺北場-競賽組半馬(21km)/挑戰組(10km)",
+      "date": "2026-11-08",
+      "city": "臺北市",
+      "venue": "總統府前凱達格蘭大道、大佳河濱公園",
+      "url": "https://irunner.biji.co/2026-2mofrun10k-21k",
+      "source": "irunner",
+      "regStart": "2026-07-21T17:00",
+      "regEnd": "2026-08-20T12:00"
+    },
+    {
+      "id": "irunner-2026_Norns_Maltese",
+      "name": "2026《Norns X 線條小狗》主題路跑活動",
+      "date": "2026-11-08",
+      "city": "新北市",
+      "venue": "大都會公園 水漾啵啵廣場",
+      "url": "https://irunner.biji.co/2026_Norns_Maltese",
+      "source": "irunner",
+      "regStart": "2026-06-05T12:00",
+      "regEnd": "2026-07-05T23:59"
+    },
+    {
+      "id": "sportsnet-20261122",
+      "name": "2026 NS RUN 南山人壽半程馬拉松",
+      "date": "2026-11-22",
+      "city": "臺北市",
+      "venue": "總統府前廣場",
+      "url": "http://www.nanshanrun.com/",
+      "source": "sportsnet",
+      "regStart": "2026-05-05",
+      "regEnd": "2026-09-14",
+      "note": "報名日期來自新聞報導，未由主辦單位網站確認"
+    },
+    {
+      "id": "irunner-tw_runforwildlife2026",
+      "name": "2026國家地理雜誌野生動物路跑",
+      "date": "2026-12-13",
+      "city": "新北市",
+      "venue": "二重疏洪運動公園",
+      "url": "https://irunner.biji.co/tw_runforwildlife2026",
+      "source": "irunner",
+      "regStart": "2026-08-25T17:00",
+      "regEnd": "2026-10-30T23:59"
+    },
+    {
+      "id": "sportsnet-20261219",
+      "name": "2026臺北馬拉松-耶誕歡樂早餐跑",
+      "date": "2026-12-19",
+      "city": "臺北市",
+      "venue": "臺北市政府",
+      "url": "http://www.taipeicitymarathon.com/breakfastrun.php",
+      "source": "sportsnet",
+      "regStart": null,
+      "regEnd": null,
+      "note": "報名日期尚未取得"
+    },
+    {
+      "id": "sportsnet-20261220",
+      "name": "2026臺北馬拉松",
+      "date": "2026-12-20",
+      "city": "臺北市",
+      "venue": "臺北市政府前廣場",
+      "url": "http://www.taipeicitymarathon.com",
+      "source": "sportsnet",
+      "regStart": "2026-07-03T16:00",
+      "regEnd": "2026-08-10T17:00",
+      "note": "全馬 7/3–7/15、半馬 7/27–8/10；此處取最早開始與最晚截止。日期來自新聞報導"
+    },
+    {
+      "id": "irunner-2027TAIPEINEWYEARFLAG-RAISINGRUN",
+      "name": "116年臺北市元旦升旗路跑",
+      "date": "2027-01-01",
+      "city": "臺北市",
+      "venue": "臺北市政府前廣場",
+      "url": "https://irunner.biji.co/2027TAIPEINEWYEARFLAG-RAISINGRUN",
+      "source": "irunner",
+      "regStart": "2026-10-12T09:00",
+      "regEnd": "2026-11-12T23:59"
+    },
+    {
+      "id": "irunner-Hi2027Taipei",
+      "name": "2027 Good Morning Taipei早安臺北城市路跑",
+      "date": "2027-01-23",
+      "city": "臺北市",
+      "venue": "大佳河濱公園(巨蛋廣場)8號水門",
+      "url": "https://irunner.biji.co/Hi!2027Taipei",
+      "source": "irunner",
+      "regStart": "2026-09-04T12:00",
+      "regEnd": "2026-10-31T23:59"
+    },
+    {
+      "id": "irunner-2027NGR",
+      "name": "2027國家地理路跑-RUN FOR EARTH",
+      "date": "2027-03-14",
+      "city": "臺北市",
+      "venue": "大佳河濱公園",
+      "url": "https://irunner.biji.co/2027NGR",
+      "source": "irunner",
+      "regStart": "2026-10-01T12:00",
+      "regEnd": "2027-01-07T23:59"
+    },
+    {
+      "id": "irunner-2027Global",
+      "name": "2027 Global 6K For Water 每步都是孩子的取水路",
+      "date": "2027-03-27",
+      "city": "臺北市",
+      "venue": "大佳河濱公園(蛋形廣場)",
+      "url": "https://irunner.biji.co/2027Global",
+      "source": "irunner",
+      "regStart": "2026-10-19T12:00",
+      "regEnd": "2026-12-31T23:59"
+    }
+  ]
+}

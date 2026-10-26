@@ -12,6 +12,14 @@ Open `index.html` in a browser.
 
 Import this repo at https://vercel.com/new. Framework preset: Other. Leave build and output settings empty.
 
+## Taipei Runs semester
+
+A read-only "Taipei Runs" entry in the semester selector lists running events in Taipei City and New Taipei City, collected from https://www.sportsnet.org.tw/schedule.php and https://irunner.biji.co/list. Each run appears up to three times: registration opens, registration closes, and race day. The class chip shows the city, so the class filter works as a city filter. Due-date colors apply to registration close and race day.
+
+The data lives in `data/taipei-runs.json` and is loaded when the page opens, so it does not use Supabase and the admin passcode is not needed. It needs to be served over http(s) (Vercel, or `npx serve`); opening `index.html` as a file leaves the Taipei Runs entry out.
+
+A daily scheduled task refreshes the file by following `data/UPDATE.md`. Run `node scripts/validate-runs.js` to check the file after editing it by hand.
+
 ## Shared calendar (Supabase)
 
 One calendar for every visitor, stored in Supabase. Everyone can view and export it. Only the admin can add or change anything: the Add event, Edit, New and Tags buttons appear after unlocking with the admin passcode. There are no user accounts.
