@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-28",
+  "updated": "2026-10-29",
   "sources": [
     "https://www.sportsnet.org.tw/schedule.php",
     "https://irunner.biji.co/list"
@@ -162,7 +162,8 @@
       "url": "https://irunner.biji.co/Hi!2027Taipei",
       "source": "irunner",
       "regStart": "2026-09-04T12:00",
-      "regEnd": "2026-10-31T23:59"
+      "regEnd": "2026-11-20T23:59",
+      "note": "報名頁顯示11/20截止，簡章寫10/31，以報名頁為準"
     },
     {
       "id": "irunner-2027NGR",
