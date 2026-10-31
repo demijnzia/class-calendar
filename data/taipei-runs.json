@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-30",
+  "updated": "2026-10-31",
   "sources": [
     "https://www.sportsnet.org.tw/schedule.php",
     "https://irunner.biji.co/list"
@@ -116,7 +116,7 @@
       "url": "https://irunner.biji.co/tw_runforwildlife2026",
       "source": "irunner",
       "regStart": "2026-08-25T17:00",
-      "regEnd": "2026-10-30T23:59"
+      "regEnd": "2026-11-13T23:59"
     },
     {
       "id": "sportsnet-20261219",
