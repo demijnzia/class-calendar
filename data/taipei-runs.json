@@ -154,6 +154,18 @@
       "regEnd": "2026-11-12T23:59"
     },
     {
+      "id": "sportsnet-20270110",
+      "name": "2027渣打臺北公益馬拉松",
+      "date": "2027-01-10",
+      "city": "臺北市",
+      "venue": "總統府 / 大佳河濱公園",
+      "url": "http://scbmarathon.com/",
+      "source": "sportsnet",
+      "regStart": null,
+      "regEnd": null,
+      "note": "報名日期尚未取得（主辦網站無法讀取）"
+    },
+    {
       "id": "irunner-Hi2027Taipei",
       "name": "2027 Good Morning Taipei早安臺北城市路跑",
       "date": "2027-01-23",
@@ -186,6 +198,78 @@
       "source": "irunner",
       "regStart": "2026-10-19T12:00",
       "regEnd": "2026-12-31T23:59"
+    },
+    {
+      "id": "sportsnet-20270411",
+      "name": "2027 TS WOMEN RUN",
+      "date": "2027-04-11",
+      "city": "臺北市",
+      "venue": "總統府 / 大佳河濱公園",
+      "url": "https://www.sportsnet.org.tw/schedule.php?schedule_year=2027",
+      "source": "sportsnet",
+      "regStart": null,
+      "regEnd": null,
+      "note": "報名日期尚未取得（年度行事曆未列）"
+    },
+    {
+      "id": "sportsnet-20270509",
+      "name": "臺北市第二十四屆舒跑杯路跑賽",
+      "date": "2027-05-09",
+      "city": "臺北市",
+      "venue": "總統府前凱達格蘭大道",
+      "url": "https://www.sportsnet.org.tw/schedule.php?schedule_year=2027",
+      "source": "sportsnet",
+      "regStart": null,
+      "regEnd": null,
+      "note": "報名日期尚未取得（年度行事曆未列）"
+    },
+    {
+      "id": "sportsnet-20270912",
+      "name": "2027 Taipei City Run 台北城市路跑賽",
+      "date": "2027-09-12",
+      "city": "臺北市",
+      "venue": "總統府前凱達格蘭大道",
+      "url": "https://www.sportsnet.org.tw/schedule.php?schedule_year=2027",
+      "source": "sportsnet",
+      "regStart": null,
+      "regEnd": null,
+      "note": "報名日期尚未取得（年度行事曆未列）"
+    },
+    {
+      "id": "sportsnet-20270926",
+      "name": "長庚紀念醫院2027永慶盃路跑",
+      "date": "2027-09-26",
+      "city": "臺北市",
+      "venue": "總統府前凱達格蘭大道",
+      "url": "https://www.sportsnet.org.tw/schedule.php?schedule_year=2027",
+      "source": "sportsnet",
+      "regStart": null,
+      "regEnd": null,
+      "note": "報名日期尚未取得（年度行事曆未列）"
+    },
+    {
+      "id": "sportsnet-20271024",
+      "name": "2027長榮航空馬拉松",
+      "date": "2027-10-24",
+      "city": "臺北市",
+      "venue": "總統府 / 大佳河濱公園",
+      "url": "https://www.sportsnet.org.tw/schedule.php?schedule_year=2027",
+      "source": "sportsnet",
+      "regStart": null,
+      "regEnd": null,
+      "note": "報名日期尚未取得（年度行事曆未列）"
+    },
+    {
+      "id": "sportsnet-20271114",
+      "name": "2027 NS RUN 南山人壽半程馬拉松",
+      "date": "2027-11-14",
+      "city": "臺北市",
+      "venue": "總統府前廣場",
+      "url": "https://www.sportsnet.org.tw/schedule.php?schedule_year=2027",
+      "source": "sportsnet",
+      "regStart": null,
+      "regEnd": null,
+      "note": "報名日期尚未取得（年度行事曆未列）"
     }
   ]
 }
