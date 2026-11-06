@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05",
+  "updated": "2026-11-06",
   "sources": [
     "https://www.sportsnet.org.tw/schedule.php",
     "https://irunner.biji.co/list"
@@ -116,7 +116,8 @@
       "url": "https://irunner.biji.co/tw_runforwildlife2026",
       "source": "irunner",
       "regStart": "2026-08-25T17:00",
-      "regEnd": "2026-11-13T23:59"
+      "regEnd": "2026-11-13T23:59",
+      "note": "報名頁顯示11/12，最新公告延長至11/13（最後一次延長）"
     },
     {
       "id": "sportsnet-20261219",
