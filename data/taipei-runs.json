@@ -1,32 +1,10 @@
 {
-  "updated": "2026-11-15",
+  "updated": "2026-11-16",
   "sources": [
     "https://www.sportsnet.org.tw/schedule.php",
     "https://irunner.biji.co/list"
   ],
   "events": [
-    {
-      "id": "irunner-2026SpongeBob-TPE",
-      "name": "2026 海綿寶寶 人生馬拉松 人生是場謎(新北場)",
-      "date": "2026-11-01",
-      "city": "新北市",
-      "venue": "新北市二重疏洪運動公園",
-      "url": "https://irunner.biji.co/2026SpongeBob-TPE",
-      "source": "irunner",
-      "regStart": "2026-06-08T12:00",
-      "regEnd": "2026-07-31T23:59"
-    },
-    {
-      "id": "sportsnet-20261101",
-      "name": "2026臺灣國家公園馬拉松-陽明山",
-      "date": "2026-11-01",
-      "city": "臺北市",
-      "venue": "陽明山中山樓八卦升旗臺",
-      "url": "http://www.sportsnet.org.tw/20261101_web/",
-      "source": "sportsnet",
-      "regStart": "2026-06-02T14:00",
-      "regEnd": "2026-08-31T17:00"
-    },
     {
       "id": "irunner-2026JujutsuKaisenRUN3",
       "name": "咒術迴戰 懷玉玉折 最強路跑（新北場）",
