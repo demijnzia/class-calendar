@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-16",
+  "updated": "2026-11-18",
   "sources": [
     "https://www.sportsnet.org.tw/schedule.php",
     "https://irunner.biji.co/list"
@@ -84,7 +84,7 @@
       "source": "irunner",
       "regStart": "2026-08-25T17:00",
       "regEnd": "2026-11-13T23:59",
-      "note": "報名頁顯示11/12，最新公告延長至11/13（最後一次延長）"
+      "note": "報名延長至11/13（最後一次延長），報名頁已更新"
     },
     {
       "id": "sportsnet-20261219",
