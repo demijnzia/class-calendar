@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-18",
+  "updated": "2026-11-21",
   "sources": [
     "https://www.sportsnet.org.tw/schedule.php",
     "https://irunner.biji.co/list"
@@ -166,8 +166,8 @@
       "url": "http://www.taipeifreewaymarathon.com/",
       "source": "sportsnet",
       "regStart": "2026-11-10T14:00",
-      "regEnd": "2027-01-07",
-      "note": "報名 11/10 14:00 起至 2027/1/7（額滿即止，9,000 名額）；日期來自新聞報導，主辦網站無法讀取"
+      "regEnd": "2027-01-07T17:00",
+      "note": "報名 11/10 14:00 起（新聞報導）至 2027/1/7 17:00（路協線上報名頁確認，額滿即止，9,000 名額）"
     },
     {
       "id": "irunner-2027NGR",
@@ -197,11 +197,11 @@
       "date": "2027-04-11",
       "city": "臺北市",
       "venue": "總統府 / 大佳河濱公園",
-      "url": "http://www.womenruntpe.com/",
+      "url": "https://www.sportsnet.org.tw/online_reg_rule.php?race_no=20270411",
       "source": "sportsnet",
       "regStart": null,
-      "regEnd": null,
-      "note": "報名日期尚未確認：新聞摘要稱報名已於「10日」開放（月份未註明，可能為 2026-11-10），主辦網站與新聞原文無法讀取"
+      "regEnd": "2027-02-25T17:00",
+      "note": "報名截止 2027/2/25 17:00（路協線上報名頁，已開放報名）；開始日期未確認：新聞摘要稱「10日」開放，月份未註明，主辦網站無法讀取"
     },
     {
       "id": "sportsnet-20270509",
